@@ -1,8 +1,8 @@
 <img src="https://avatars.githubusercontent.com/u/11992311?s=200&v=4" width="300">
 
-### Research Area New Media Website 2024
+## Research Area New Media Website 2024
 
-## Welcome :)
+### Welcome
 
 Find and get the latest updates on the code here in this repository.
 
@@ -12,8 +12,9 @@ Data structures WIP: [Miro Board](https://miro.com/app/board/uXjVNbM6AyU=/)
 
 Ideation protocols: [Etherpad](https://miro.com/app/board/uXjVNbM6AyU=/)
 
+---
 
-## Kirby's readme
+#### Kirby's readme
 
 <img src="http://getkirby.com/assets/images/github/plainkit.jpg" width="300">
 
