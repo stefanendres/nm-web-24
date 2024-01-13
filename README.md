@@ -1,4 +1,4 @@
-<img src="https://avatars.githubusercontent.com/u/11992311?s=200&v=4" width="300">
+<img src="https://avatars.githubusercontent.com/u/11992311?s=200&v=4" width="150" style="border-radius: 15px;">
 
 ## Research Area New Media Website 2024
 
