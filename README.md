@@ -1,8 +1,8 @@
-<img src="https://avatars.githubusercontent.com/u/11992311?s=200&v=4" width="150" style="border-radius: 15px;">
+<img src="https://avatars.githubusercontent.com/u/11992311?s=200&v=4" width="120">
 
 ## Research Area New Media Website 2024
 
-### Welcome
+### Welcome!
 
 Find and get the latest updates on the code here in this repository.
 
