@@ -1,0 +1,56 @@
+title: UI Text
+pages: false
+files: false
+options:
+  changeSlug: false
+
+tabs:
+  textfields:
+    label: Textfelder
+    fields:
+      read_more_text:
+        label: Button "Mehr"
+        width: 1/4
+        type: text
+      read_less_text:
+        label: Button "Weniger"
+        width: 1/4
+        type: text
+  posts:
+    label: Posts
+    fields:
+      explore_text:
+        label: Button "Mehr erfahren"
+        width: 1/4
+        type: text
+      all_items_text:
+        label: Button "Alle Einträge"
+        width: 1/4
+        type: text
+      next_item_text:
+        label: Button "Nächster Eintrag"
+        width: 1/4
+        type: text
+      prev_item_text:
+        label: Button "Vorheriger Eintrag"
+        width: 1/4
+        type: text
+  cookies:
+    fields:
+      cookie_notice_text:
+        label: Cookie-Hinweis
+        width: 1/2
+        type: writer
+        size: small
+        marks:
+          - link
+        nodes: false
+        inline: true
+      cookie_accept_text:
+        label: Button "Akzeptieren"
+        width: 1/4
+        type: text
+      cookie_deny_text:
+        label: Button "Ablehnen"
+        width: 1/4
+        type: text

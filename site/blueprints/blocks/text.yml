@@ -1,0 +1,12 @@
+name: field.blocks.text.name
+icon: text
+wysiwyg: true
+preview: text
+fields:
+  text:
+    type: writer
+    marks:
+      - link
+    nodes: false
+    inline: true
+    placeholder: field.blocks.text.placeholder

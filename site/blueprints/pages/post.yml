@@ -1,0 +1,32 @@
+title: Post (Blueprint Example)
+
+columns:
+  left:
+    width: 1/2
+    fields:
+      blocks:
+        type: blocks
+        fieldsets:
+          heading:
+            extends: blocks/heading
+            fields:
+              level:
+                options:
+                  - h2
+                  - h3
+          - text
+          - image
+  right:
+    width: 1/2
+    type: fields
+    fields:
+      layout:
+        type: layout
+        layouts:
+          - "1/1"
+          - "1/2, 1/2"
+          - "1/3, 1/3, 1/3"
+        fieldsets:
+          - heading
+          - image
+          - text

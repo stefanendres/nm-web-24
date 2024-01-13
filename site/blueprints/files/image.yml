@@ -1,0 +1,15 @@
+title: Image
+accept:
+  mime: image/jpeg, image/png, image/gif, image/svg+xml
+  maxsize: 8388608
+
+fields:
+  alt:
+    type: text
+    help: Content description for accessibility tools, screen readers and search engines.
+
+
+
+
+
+

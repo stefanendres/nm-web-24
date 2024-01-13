@@ -1,0 +1,10 @@
+title: Legal
+pages: false
+files: false
+
+fields:
+  text:
+    label: Text
+    width: 2/3
+    type: writer
+    nodes: true

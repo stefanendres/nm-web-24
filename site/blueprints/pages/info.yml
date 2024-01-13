@@ -1,0 +1,11 @@
+title: Information
+
+columns:
+  left:
+    width: 2/3
+    fields:
+
+  right:
+    width: 1/3
+    type: fields
+    fields:

@@ -1,0 +1,11 @@
+title: Posts (Projects)
+
+columns:
+  left:
+    width: 2/3
+    sections:
+      posts:
+        type: pages
+        templates:
+          - post
+        text: <strong>{{ page.title }}</strong>&ensp;

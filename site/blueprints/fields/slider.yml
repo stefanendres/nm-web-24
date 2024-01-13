@@ -1,0 +1,38 @@
+label: Slider
+type: group
+fields:
+  slider_items:
+    label: Slides
+    type: structure
+    help: Bitte immer mindestens ein Slide mit einem Bild benutzen (für die Vorschau-Kachel relevant)
+    #min: 1
+    #max: 9
+    translate: false
+    columns:
+      slide_type:
+      slide_image:
+    fields:
+      slide_type:
+        label: Typ
+        type: select
+        width: 1/2
+        required: true
+        options:
+          type_image: Bild
+          type_embed: Einbettung
+      slide_image:
+        label: Bilddatei
+        when:
+          slide_type: type_image
+        type: files
+        min: 1
+        max: 1
+        layout: cards
+        query: site.index.images
+        uploads:
+          template: image
+      slide_embed:
+        label: Einbettungs-Code
+        when:
+          slide_type: type_embed
+        type: text

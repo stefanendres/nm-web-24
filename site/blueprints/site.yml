@@ -1,0 +1,36 @@
+title: Site
+
+columns:
+  left:
+    width: 2/3
+    sections:
+      pages:
+        label: Pages
+        type: pages
+        templates:
+          #- default
+          #- error
+          - home
+          - info
+          - legal
+          - posts
+        text: "{{ page.title }}"
+        empty: No pages yet.
+  right:
+    width: 1/3
+    sections:
+      fields:
+        fields:
+          info:
+            type: info
+            label: FAQs
+            text: |
+              Für Gendersternchen (\*) immer \ vor \* einfügen
+      configpages:
+        label: Settings
+        type: pages
+        templates:
+          - globals
+          - ui_text
+        text: "{{ page.title }}"
+        empty: No settings yet.

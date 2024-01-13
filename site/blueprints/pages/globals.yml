@@ -1,0 +1,65 @@
+title: Globals
+pages: false
+files: false
+options:
+  changeSlug: false
+
+tabs:
+  graphics:
+    label: Graphics
+    fields:
+      favicon:
+        type: files
+        width: 1/4
+        translate: false
+        layout: cards
+        image:
+          back: white
+        size: tiny
+        max: 1
+      site_logo:
+        label: Site Logo
+        type: files
+        width: 1/4
+        translate: false
+        layout: cards
+        image:
+          back: white
+        size: tiny
+        max: 1
+        uploads:
+          template: image
+      email_icon:
+        label: Email Button Icon
+        type: files
+        width: 1/4
+        translate: false
+        layout: cards
+        image:
+          back: white
+        size: tiny
+        max: 1
+        uploads:
+          template: image
+      close_icon:
+        label: Close Icon
+        type: files
+        width: 1/4
+        translate: false
+        layout: cards
+        image:
+          back: white
+        size: tiny
+        max: 1
+        uploads:
+          template: image
+      
+  meta:
+    fields:
+      meta: fields/meta_data
+  
+  header:
+    fields:
+    
+  footer:
+    fields:

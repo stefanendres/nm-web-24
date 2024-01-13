@@ -1,0 +1,25 @@
+Title: Globals
+
+----
+
+Uuid: j7UvFw80VrMRccv4
+
+----
+
+Favicon: 
+
+----
+
+Site-logo: 
+
+----
+
+Email-icon: 
+
+----
+
+Close-icon: 
+
+----
+
+Meta-image: 
