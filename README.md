@@ -10,7 +10,7 @@ Design WIP: [Figma](https://www.figma.com/file/0rmApEdQkS09Pyi1z1lpM1/NM-Website
 
 Data structures WIP: [Miro Board](https://miro.com/app/board/uXjVNbM6AyU=/)
 
-Ideation protocols: [Etherpad](https://miro.com/app/board/uXjVNbM6AyU=/)
+Ideation protocols: [Etherpad](https://etherpad.wikimedia.org/p/20_years_new_media)
 
 ---
 
