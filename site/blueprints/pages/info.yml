@@ -4,6 +4,52 @@ columns:
   left:
     width: 2/3
     fields:
+      about_headline:
+        label: Mission Statement Headline
+        type: text
+        width: 1/3
+      about_text:
+        label: Misson Statement Text-Content
+        type: writer
+        width: 2/3
+        marks:
+          - bold
+          - link
+      teaching_staff:
+        label: Teaching Staff
+        type: structure
+        fields:
+          name:
+            type: text
+            width: 1/3
+          status:
+            type: select
+            width: 1/3
+            options:
+              active: Current Staff
+              inactive: Former Staff
+          role:
+            type: select
+            width: 1/3
+            options:
+              prof: Professor
+              teacher: Assistant (küstl. wiss. HK)
+              assistant: Assistant (stud. HK)
+              guest_prof: Guest Professor
+              guest_lecturer: Guest Lecturer
+          timespan:
+            type: text
+            width: 1/4
+            when:
+              status: inactive
+          profile_picture:
+            type: files
+            label: Picture
+            width: 1/3
+            multiple: false
+            layout: cards
+            when:
+              status: active
 
   right:
     width: 1/3
