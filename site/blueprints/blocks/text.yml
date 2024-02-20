@@ -7,6 +7,8 @@ fields:
     type: writer
     marks:
       - link
+      - bold
+      - italic
     nodes: false
     inline: true
     placeholder: field.blocks.text.placeholder

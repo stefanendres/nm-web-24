@@ -4,18 +4,14 @@ columns:
   left:
     width: 2/3
     sections:
-      pages:
-        label: Pages
+      posts:
+        label: Posts
         type: pages
         templates:
-          #- default
-          #- error
-          - home
-          - info
-          - legal
-          - posts
-        text: "{{ page.title }}"
-        empty: No pages yet.
+          - post
+        text: <strong>{{ page.title }}</strong>&ensp;<small style="color:grey;">{{ page.author_id.toUser.username }}&ensp;{{ page.update_time }}</small>
+        empty: No posts yet.
+      
   right:
     width: 1/3
     sections:
@@ -26,6 +22,17 @@ columns:
             label: FAQs
             text: |
               Für Gendersternchen (\*) immer \ vor \* einfügen
+      pages:
+        label: Pages
+        type: pages
+        templates:
+          #- default
+          #- error
+          - home
+          - info
+          - legal
+        text: "{{ page.title }}"
+        empty: No pages yet.
       configpages:
         label: Settings
         type: pages

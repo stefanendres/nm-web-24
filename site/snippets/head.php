@@ -36,4 +36,4 @@
   data-page-title="<?= $page->title() ?>"
   data-site-url="<?= $site->url() ?>"
   data-site-title="<?= $site_title ?>">
-  <h1><?= $site_title ?></h1>
+  <h1><?= $site->title() ?></h1>

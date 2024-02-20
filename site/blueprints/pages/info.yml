@@ -1,23 +1,59 @@
 title: Information
 
-columns:
-  left:
-    width: 2/3
+options:
+  #student and alumni roles can not do anything here
+  access:
+    student: false
+    alumni: false
+  create:
+    student: false
+    alumni: false
+  update:
+    student: false
+    alumni: false
+  changeStatus:
+    student: false
+    alumni: false
+  changeTitle:
+    student: false
+    alumni: false
+  changeSlug:
+    student: false
+    alumni: false
+  delete:
+    student: false
+    alumni: false
+
+tabs:
+  intro:
     fields:
       about_headline:
-        label: Mission Statement Headline
+        label: Headline
         type: text
-        width: 1/3
+        width: 2/3
       about_text:
-        label: Misson Statement Text-Content
+        label: Text
         type: writer
         width: 2/3
         marks:
           - bold
           - link
+          #link:
+          #  extends: fields/link
+          #  options:
+          #    - page
+          #    - anchor
+        nodes: false
+  people:
+    fields:
       teaching_staff:
         label: Teaching Staff
         type: structure
+        width: 2/3
+        columns:
+          name:
+          status:
+          role:
         fields:
           name:
             type: text
@@ -39,7 +75,7 @@ columns:
               guest_lecturer: Guest Lecturer
           timespan:
             type: text
-            width: 1/4
+            width: 1/3
             when:
               status: inactive
           profile_picture:
@@ -50,8 +86,11 @@ columns:
             layout: cards
             when:
               status: active
-
-  right:
-    width: 1/3
-    type: fields
-    fields:
+          email:
+            type: email
+            width: 1/3
+            when:
+              status: active
+          website:
+            type: url
+            width: 1/3

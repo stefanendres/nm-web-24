@@ -1,29 +1,56 @@
 title: Alumni
+# sync with student.yml
 permissions:
   access:
     account: true
     panel: true
-    site: false
+    site: true
     languages: true
     system: false
     users: false
-    posts: false
-sections:
-  content:
-    type: fields
-    width: 2/3
-    fields:
-      layout:
-        type: layout
-        layouts:
-          - "1/1"
-          - "1/2, 1/2"
-          - "1/3, 1/3, 1/3"
-        fieldsets:
-          - image
-          - text
-      reviewed:
-        type: toggle
-        text:
-          - "No"
-          - "Yes"
+  files:
+    create: true
+    changeName: true
+    changeTemplate: true
+    delete: true
+    read: true
+    replace: true
+    update: true
+  languages:
+    create: false
+    delete: false
+  pages:
+    access: false
+    changeSlug: false
+    changeStatus: false
+    changeTemplate: false
+    changeTitle: false
+    create: true
+    delete: false
+    list: true
+    move: false
+    duplicate: false
+    preview: true
+    read: true
+    sort: false
+    update: false
+  site:
+    changeTitle: false
+    update: false
+  user:
+    changeEmail: true
+    changeLanguage: true
+    changeName: false
+    changePassword: true
+    changeRole: false
+    delete: true
+    update: true
+  users:
+    changeEmail: false
+    changeLanguage: false
+    changeName: false
+    changePassword: false
+    changeRole: false
+    create: false
+    delete: false
+    update: false

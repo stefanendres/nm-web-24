@@ -1,4 +1,17 @@
 <?php
+/*
+
+---------------------------------------
+Kirby Configuration
+---------------------------------------
+
+By default you don't have to configure anything to
+make Kirby work. For more fine-grained configuration
+of the system, please check out http://getkirby.com/docs/advanced/options
+
+*/
+
+date_default_timezone_set('Europe/Berlin');
 
 $q = 100;
 $s_p = 1;
@@ -88,16 +101,29 @@ return [
     'css' => 'assets/styles/panel/custom-panel.css',
     'js' => 'assets/scripts/panel/custom-panel.js'
   ],
+  'hooks' => [
+    'page.create:after' => function ($page) {
+      if ($this->user()) {
+        // autofill author data
+        $page->update([
+          'author_id' => $this->user()->id()
+        ]);
+      }
+    },
+    'page.update:after' => function ($newPage, $oldPage) {
+      if ($newPage->intendedTemplate()->name() == 'post' && $this->user()->role()->name() !== 'admin') {
+        // if student or alumni is editing a post-page the page will be set to "unlisted"
+        $newPage->update([
+          'update_time' => $newPage->modified('d.m.Y H:i'),
+        ]);
+        $newPage->changeStatus('unlisted'); // unlisted does not move content/page/ to a seperate folder, so the page cannot be lost
+      }
+    },
+    'page.changeStatus:after' => function ($newPage, $oldPage) {
+      if ($newPage->intendedTemplate()->name() == 'post' && $this->user()->role()->name() !== 'admin') {
+        // if student or alumni tries to publish a post-page the page will be set to "unlisted"
+        $newPage->changeStatus('unlisted');
+      }
+    }
+  ]
 ];
-
-/*
-
----------------------------------------
-Kirby Configuration
----------------------------------------
-
-By default you don't have to configure anything to
-make Kirby work. For more fine-grained configuration
-of the system, please check out http://getkirby.com/docs/advanced/options
-
-*/

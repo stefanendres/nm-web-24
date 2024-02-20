@@ -1,4 +1,39 @@
-body>div[data-role="alumni"][data-template="alumni"] .k-field-name-reviewed{
+body>div[data-role="student"][data-template="site"] .k-section-name-pages,
+body>div[data-role="alumni"][data-template="site"] .k-section-name-pages,
+body>div[data-role="student"][data-template="site"] .k-section-name-configpages,
+body>div[data-role="alumni"][data-template="site"] .k-section-name-configpages,
+body>div[data-role="student"][data-template="post"] .k-tab-button[title="Meta"],
+body>div[data-role="alumni"][data-template="post"] .k-tab-button[title="Meta"],
+body>div[data-role="student"][data-template="post"] .k-field-name-author_id,
+body>div[data-role="alumni"][data-template="post"] .k-field-name-author_id,
+body>div[data-role="student"][data-template="post"] .k-field-name-author_name,
+body>div[data-role="alumni"][data-template="post"] .k-field-name-author_name {
   display: none !important;
   pointer-events: none !important;
+}
+
+body>div[data-role="student"][data-template="post"] .k-page-view-status,
+body>div[data-role="alumni"][data-template="post"] .k-page-view-status {
+  pointer-events: none !important;
+}
+
+body>div[data-role="student"][data-template="post"] .k-field-name-status,
+body>div[data-role="alumni"][data-template="post"] .k-field-name-status{
+  pointer-events: none !important;
+}
+body>div[data-role="student"][data-template="post"] .k-field-name-status:before,
+body>div[data-role="alumni"][data-template="post"] .k-field-name-status:before {
+  content: 'Sorry, you are not allowed change anything here.'
+}
+body>div[data-role="student"][data-template="post"] .k-field-name-status *,
+body>div[data-role="alumni"][data-template="post"] .k-field-name-status * {
+  display: none !important;
+}
+
+.embed-preview{
+  display: flex;
+  border-radius: var(--input-rounded);
+}
+.embed-preview>*{
+  height: 100% !important;
 }

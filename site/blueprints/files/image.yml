@@ -6,6 +6,7 @@ accept:
 fields:
   alt:
     type: text
+    width: 1/2
     help: Content description for accessibility tools, screen readers and search engines.
 
 

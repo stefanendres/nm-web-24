@@ -9,6 +9,7 @@
  */
 return function($site, $page, $pages, $kirby) {
   $shared = $kirby->controller('site' , compact('site', 'page', 'pages', 'kirby'));
-  return A::merge($shared, compact('page'));
+  $posts = $site->children()->listed()->template('post');
+  return A::merge($shared, compact('page', 'posts'));
 };
 ?>

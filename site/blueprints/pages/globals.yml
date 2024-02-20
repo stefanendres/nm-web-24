@@ -1,7 +1,27 @@
 title: Globals
 pages: false
 files: false
+
 options:
+  #student and alumni roles can not do anything here
+  access:
+    student: false
+    alumni: false
+  create:
+    student: false
+    alumni: false
+  update:
+    student: false
+    alumni: false
+  changeStatus:
+    student: false
+    alumni: false
+  changeTitle:
+    student: false
+    alumni: false
+  delete:
+    student: false
+    alumni: false
   changeSlug: false
 
 tabs:

@@ -1,32 +1,165 @@
-title: Post (Blueprint Example)
+title: Post
 
-columns:
-  left:
-    width: 1/2
+options:
+  # because student and alumni roles can only read own posts,
+  # they have only these options on their own posts
+  access:
+    student: true
+    alumni: true
+  create:
+    student: true
+    alumni: true
+  update:
+    student: true
+    alumni: true
+  changeStatus:
+    student: true
+    alumni: true
+  changeTitle:
+    student: true
+    alumni: true
+  changeSlug:
+    student: true
+    alumni: true
+  delete:
+    student: true
+    alumni: true
+
+
+tabs:
+
+  data:
     fields:
-      blocks:
-        type: blocks
-        fieldsets:
-          heading:
-            extends: blocks/heading
-            fields:
-              level:
-                options:
-                  - h2
-                  - h3
-          - text
-          - image
-  right:
-    width: 1/2
-    type: fields
+      category:
+        type: select
+        width: 1/4
+        default: project
+        placeholder: "Please select" 
+        options:
+          project: Project
+          group_project: Group Project
+          graduation_project: Graduation Project
+          excursion: Excursion
+          workshop: Workshop
+          talk: Talk
+          spam: Spam
+      tags:
+        type: tags
+        width: 1/3
+        options:
+          type: query
+          query: site.children.template("post").pluck("tags", ",", true)
+      year_select: fields/year_select
+      participants:
+        type: users
+        width: 1/4
+      related_posts:
+        label: Related posts
+        type: multiselect
+        width: 1/3
+        icon: attachment
+        options:
+          type: query
+          query: site.children.template("post")
+          text: "{{ page.title }}&ensp;<small style="color:grey;">{{ page.author_id.toUser.username }}</small>"
+          value: "{{ page.uuid }}"
+
+  preview:
     fields:
-      layout:
-        type: layout
-        layouts:
-          - "1/1"
-          - "1/2, 1/2"
-          - "1/3, 1/3, 1/3"
-        fieldsets:
-          - heading
-          - image
-          - text
+      preview_image:
+        label: Image
+        width: 1/4
+        type: files
+        mulitple: false
+        layout: cards
+        #required: true #required causes error with changeSlug/create hooks
+        multiple: false
+        uploads:
+          template: image
+      description:
+        width: 1/2
+        type: writer
+        inline: false
+        nodes: false
+        #required: true #required causes error with changeSlug/create hooks
+        marks:
+          - bold
+          - link
+  post_content:
+    label: Content
+    columns:
+      left:
+        width: 1/4
+        fields:
+          layout_type:
+            label: Layout
+            type: radio
+            options:
+              simple: Simple
+              advanced: Advanced
+      right:
+        width: 3/4
+        fields:
+          blocks:
+            type: blocks
+            when:
+              layout_type: simple
+            fieldsets:
+              - heading
+              - text
+              - image
+              - gallery
+              - embed
+              - code
+              # -links ? people could play with internal-links
+          layout:
+            type: layout
+            label: Grid
+            when:
+              layout_type: advanced
+            layouts:
+              - "1/1"
+              - "1/2, 1/2"
+              - "1/3, 1/3, 1/3"
+            fieldsets:
+              - heading
+              - text
+              - image
+              - gallery
+              - embed
+              - code
+              # -links ? people could play with internal-links
+          css_code:
+            label: Custom CSS
+            type: blocks
+            multiple: false
+            max: 1
+            fieldsets:
+              code:
+                extends: blocks/code
+                fields:
+                  language:
+                    default: CSS
+                    options: false
+            default:
+              - type: code
+            when:
+              layout_type: advanced
+      
+  meta:
+    fields:
+      update_time:
+        label: Updated
+        width: 1/4
+        type: text
+        disabled: true
+      author_id:
+        # disabled for student and alumni by panel css/js
+        label: Author
+        width: 1/4
+        type: select
+        options:
+          type: query
+          query: kirby.users
+          text: "{{ user.username }}"
+          value: "{{ user.id }}"
