@@ -32,8 +32,8 @@
           data-ratio="<?= $ratio ?>"
           alt="<?= $alt ?>"
           title="<?= $title ?>">
-        <?php if ($file->caption()->isNotEmpty()): ?>
-          <figcaption><?= $file->caption() ?></figcaption>
+        <?php if ($caption->isNotEmpty()): ?>
+          <figcaption><?= $caption ?></figcaption>
         <?php endif ?>
       </figure>
     <?php else: ?>
@@ -55,8 +55,8 @@
             alt="<?= $alt ?>"
             title="<?= $title ?>">
         </picture>
-        <?php if ($file->caption()->isNotEmpty()): ?>
-          <figcaption><?= $file->caption() ?></figcaption>
+        <?php if ($caption->isNotEmpty()): ?>
+          <figcaption><?= $caption ?></figcaption>
         <?php endif ?>
       </figure>
     <?php endif ?>

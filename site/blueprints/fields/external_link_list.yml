@@ -1,0 +1,15 @@
+label: Links
+width: 1/2
+type: structure
+fields:
+  link_name:
+    type: text
+    label: Title
+    width: 1/3
+  link_target:
+    type: link
+    label: Target
+    width: 2/3
+    options:
+      - url
+      - email

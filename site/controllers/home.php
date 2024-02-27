@@ -7,8 +7,8 @@
  * More about controllers:
  * https://getkirby.com/docs/guide/templates/controllers
  */
-return function($site, $page, $pages, $kirby) {
-  $shared = $kirby->controller('site' , compact('site', 'page', 'pages', 'kirby'));
+return function($site, $page, $pages, $kirby, $users) {
+  $shared = $kirby->controller('site' , compact('site', 'page', 'pages', 'kirby', 'users'));
   $posts = $site->children()->listed()->template('post');
   return A::merge($shared, compact('page', 'posts'));
 };

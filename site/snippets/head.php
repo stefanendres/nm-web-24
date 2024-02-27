@@ -27,6 +27,13 @@
 
 <?= css(['assets/styles/'.get_filename('assets/styles/*.css'), '@auto']) ?>
 <?= js(['assets/scripts/plugins/modernizr.js', '@auto']) ?>
+<?php if ($page->intendedTemplate()->name() == 'post' && $custom_css): ?>
+  <style><?= $custom_css ?></style>
+<?php endif ?>
+<?php if ($page->intendedTemplate()->name() == 'post'): ?>
+  <?= css(['assets/styles/plugins/hljs.css', '@auto']) ?>
+<?php endif ?>
+
 </head>
 
 <body class="template-<?= $page->intendedTemplate() ?> page-<?= $page->slug() ?>"
@@ -37,3 +44,4 @@
   data-site-url="<?= $site->url() ?>"
   data-site-title="<?= $site_title ?>">
   <h1><?= $site->title() ?></h1>
+

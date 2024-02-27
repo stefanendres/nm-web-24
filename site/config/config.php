@@ -14,77 +14,76 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 date_default_timezone_set('Europe/Berlin');
 
 $q = 100;
-$s_p = 1;
-$s_l = 1;
+$s = 1;
 
 return [
   'debug' => true,
   'thumbs' => [
     #'driver' => 'im',
     'srcsets' => [
-      'thumb_100' => [
-        '320w' => ['width' => round(400*$s_p), 'quality' => $q, 'format' => 'webp'],
-        '400w' => ['width' => round(800*$s_p), 'quality' => $q, 'format' => 'webp'],
-        '800w' => ['width' => round(1200*(1/2)*$s_p), 'quality' => $q, 'format' => 'webp'],
-        '1200w' => ['width' => round(1600*(1/3)*$s_l), 'quality' => $q, 'format' => 'webp'], // TODO 1/3 into styles: layout, font-sizes,...
-        '1600w' => ['width' => round(2000*(1/4)*$s_l), 'quality' => $q, 'format' => 'webp'], // TODO 1/4 into styles: layout, font-sizes,...
-        '2000w' => ['width' => round(4000*(1/5)*$s_l), 'quality' => $q, 'format' => 'webp']  // TODO 1/5 into styles: layout, font-sizes,...
+      'image_100' => [
+        '320w' => ['width' => round(400*$s), 'quality' => $q, 'format' => 'webp'],
+        '400w' => ['width' => round(800*$s), 'quality' => $q, 'format' => 'webp'],
+        '800w' => ['width' => round(1200*$s), 'quality' => $q, 'format' => 'webp'],
+        '1200w' => ['width' => round(1600*$s), 'quality' => $q, 'format' => 'webp'],
+        '1600w' => ['width' => round(2000*$s), 'quality' => $q, 'format' => 'webp'],
+        '2000w' => ['width' => round(4000*$s), 'quality' => $q, 'format' => 'webp'] 
       ],
-      'thumb_100_fallback' => [
-        '320w' => ['width' => round(400*$s_p), 'quality' => $q],
-        '400w' => ['width' => round(600*$s_p), 'quality' => $q],
-        '800w' => ['width' => round(1200*(1/2)*$s_p), 'quality' => $q],
-        '1200w' => ['width' => round(1600*(1/3)*$s_l), 'quality' => $q],
-        '1600w' => ['width' => round(2000*(1/4)*$s_l), 'quality' => $q],
-        '2000w' => ['width' => round(4000*(1/5)*$s_l), 'quality' => $q]
+      'image_100_fallback' => [
+        '320w' => ['width' => round(400*$s), 'quality' => $q],
+        '400w' => ['width' => round(600*$s), 'quality' => $q],
+        '800w' => ['width' => round(1200*$s), 'quality' => $q],
+        '1200w' => ['width' => round(1600*$s), 'quality' => $q],
+        '1600w' => ['width' => round(2000*$s), 'quality' => $q],
+        '2000w' => ['width' => round(4000*$s), 'quality' => $q]
       ],
-      'thumb_50' => [
-        '320w' => ['width' => round((1/2)*400*$s_p), 'quality' => $q, 'format' => 'webp'],
-        '400w' => ['width' => round((1/2)*800*$s_p), 'quality' => $q, 'format' => 'webp'],
-        '800w' => ['width' => round((1/2)*1200*(1/2)*$s_p), 'quality' => $q, 'format' => 'webp'],
-        '1200w' => ['width' => round((1/2)*1600*(1/3)*$s_l), 'quality' => $q, 'format' => 'webp'],
-        '1600w' => ['width' => round((1/2)*2000*(1/4)*$s_l), 'quality' => $q, 'format' => 'webp'],
-        '2000w' => ['width' => round((1/2)*4000*(1/5)*$s_l), 'quality' => $q, 'format' => 'webp']
+      'image_66' => [
+        '320w' => ['width' => round((2/3)*400*$s), 'quality' => $q, 'format' => 'webp'],
+        '400w' => ['width' => round((2/3)*800*$s), 'quality' => $q, 'format' => 'webp'],
+        '800w' => ['width' => round((2/3)*1200*$s), 'quality' => $q, 'format' => 'webp'],
+        '1200w' => ['width' => round((2/3)*1600*$s), 'quality' => $q, 'format' => 'webp'],
+        '1600w' => ['width' => round((2/3)*2000*$s), 'quality' => $q, 'format' => 'webp'],
+        '2000w' => ['width' => round((2/3)*4000*$s), 'quality' => $q, 'format' => 'webp']
       ],
-      'thumb_50_fallback' => [
-        '320w' => ['width' => round((1/2)*400*$s_p), 'quality' => $q],
-        '400w' => ['width' => round((1/2)*800*$s_p), 'quality' => $q],
-        '800w' => ['width' => round((1/2)*1200*(1/2)*$s_p), 'quality' => $q],
-        '1200w' => ['width' => round((1/2)*1600*(1/3)*$s_l), 'quality' => $q],
-        '1600w' => ['width' => round((1/2)*2000*(1/4)*$s_l), 'quality' => $q],
-        '2000w' => ['width' => round((1/2)*4000*(1/5)*$s_l), 'quality' => $q]
+      'image_66_fallback' => [
+        '320w' => ['width' => round((2/3)*400*$s), 'quality' => $q],
+        '400w' => ['width' => round((2/3)*800*$s), 'quality' => $q],
+        '800w' => ['width' => round((2/3)*1200*$s), 'quality' => $q],
+        '1200w' => ['width' => round((2/3)*1600*$s), 'quality' => $q],
+        '1600w' => ['width' => round((2/3)*2000*$s), 'quality' => $q],
+        '2000w' => ['width' => round((2/3)*4000*$s), 'quality' => $q]
       ],
-      'thumb_33' => [
-        '320w' => ['width' => round((1/3)*400*$s_p), 'quality' => $q, 'format' => 'webp'],
-        '400w' => ['width' => round((1/3)*800*$s_p), 'quality' => $q, 'format' => 'webp'],
-        '800w' => ['width' => round((1/3)*1200*(1/2)*$s_p), 'quality' => $q, 'format' => 'webp'],
-        '1200w' => ['width' => round((1/3)*1600*(1/3)*$s_l), 'quality' => $q, 'format' => 'webp'],
-        '1600w' => ['width' => round((1/3)*2000*(1/4)*$s_l), 'quality' => $q, 'format' => 'webp'],
-        '2000w' => ['width' => round((1/3)*4000*(1/5)*$s_l), 'quality' => $q, 'format' => 'webp']
+      'image_50' => [
+        '320w' => ['width' => round((1/2)*400*$s), 'quality' => $q, 'format' => 'webp'],
+        '400w' => ['width' => round((1/2)*800*$s), 'quality' => $q, 'format' => 'webp'],
+        '800w' => ['width' => round((1/2)*1200*$s), 'quality' => $q, 'format' => 'webp'],
+        '1200w' => ['width' => round((1/2)*1600*$s), 'quality' => $q, 'format' => 'webp'],
+        '1600w' => ['width' => round((1/2)*2000*$s), 'quality' => $q, 'format' => 'webp'],
+        '2000w' => ['width' => round((1/2)*4000*$s), 'quality' => $q, 'format' => 'webp']
       ],
-      'thumb_33_fallback' => [
-        '320w' => ['width' => round((1/3)*400*$s_p), 'quality' => $q],
-        '400w' => ['width' => round((1/3)*800*$s_p), 'quality' => $q],
-        '800w' => ['width' => round((1/3)*1200*(1/2)*$s_p), 'quality' => $q],
-        '1200w' => ['width' => round((1/3)*1600*(1/3)*$s_l), 'quality' => $q],
-        '1600w' => ['width' => round((1/3)*2000*(1/4)*$s_l), 'quality' => $q],
-        '2000w' => ['width' => round((1/3)*4000*(1/5)*$s_l), 'quality' => $q]
+      'image_50_fallback' => [
+        '320w' => ['width' => round((1/2)*400*$s), 'quality' => $q],
+        '400w' => ['width' => round((1/2)*800*$s), 'quality' => $q],
+        '800w' => ['width' => round((1/2)*1200*$s), 'quality' => $q],
+        '1200w' => ['width' => round((1/2)*1600*$s), 'quality' => $q],
+        '1600w' => ['width' => round((1/2)*2000*$s), 'quality' => $q],
+        '2000w' => ['width' => round((1/2)*4000*$s), 'quality' => $q]
       ],
-      'zoom_1' => [
-        '320w' => ['width' => round(400*$s_p), 'quality' => $q, 'format' => 'webp'],
-        '400w' => ['width' => round(800*$s_p), 'quality' => $q, 'format' => 'webp'],
-        '800w' => ['width' => round(1200*$s_p), 'quality' => $q, 'format' => 'webp'],
-        '1200w' => ['height' => round(1600*(9/16)*$s_l), 'quality' => $q, 'format' => 'webp'],
-        '1600w' => ['height' => round(2000*(9/16)*$s_l), 'quality' => $q, 'format' => 'webp'],
-        '2000w' => ['height' => round(4000*(9/16)*$s_l), 'quality' => $q, 'format' => 'webp']
+      'image_33' => [
+        '320w' => ['width' => round((1/3)*400*$s), 'quality' => $q, 'format' => 'webp'],
+        '400w' => ['width' => round((1/3)*800*$s), 'quality' => $q, 'format' => 'webp'],
+        '800w' => ['width' => round((1/3)*1200*$s), 'quality' => $q, 'format' => 'webp'],
+        '1200w' => ['width' => round((1/3)*1600*$s), 'quality' => $q, 'format' => 'webp'],
+        '1600w' => ['width' => round((1/3)*2000*$s), 'quality' => $q, 'format' => 'webp'],
+        '2000w' => ['width' => round((1/3)*4000*$s), 'quality' => $q, 'format' => 'webp']
       ],
-      'zoom_1_fallback' => [
-        '320w' => ['width' => round(400*$s_p), 'quality' => $q],
-        '400w' => ['width' => round(800*$s_p), 'quality' => $q],
-        '800w' => ['width' => round(1200*$s_p), 'quality' => $q],
-        '1200w' => ['height' => round(1600*(9/16)*$s_l), 'quality' => $q],
-        '1600w' => ['height' => round(2000*(9/16)*$s_l), 'quality' => $q],
-        '2000w' => ['height' => round(4000*(9/16)*$s_l), 'quality' => $q]
+      'image_33_fallback' => [
+        '320w' => ['width' => round((1/3)*400*$s), 'quality' => $q],
+        '400w' => ['width' => round((1/3)*800*$s), 'quality' => $q],
+        '800w' => ['width' => round((1/3)*1200*$s), 'quality' => $q],
+        '1200w' => ['width' => round((1/3)*1600*$s), 'quality' => $q],
+        '1600w' => ['width' => round((1/3)*2000*$s), 'quality' => $q],
+        '2000w' => ['width' => round((1/3)*4000*$s), 'quality' => $q]
       ],
       'breakpoints' => [320, 400, 800, 1200, 1600, 2000],
     ],
@@ -103,10 +102,11 @@ return [
   ],
   'hooks' => [
     'page.create:after' => function ($page) {
-      if ($this->user()) {
+      if ($page->intendedTemplate()->name() == 'post' && $this->user()) {
         // autofill author data
         $page->update([
-          'author_id' => $this->user()->id()
+          'author_id' => $this->user()->id(),
+          'author_name' => $this->user()->name()
         ]);
       }
     },
@@ -114,6 +114,7 @@ return [
       if ($newPage->intendedTemplate()->name() == 'post' && $this->user()->role()->name() !== 'admin') {
         // if student or alumni is editing a post-page the page will be set to "unlisted"
         $newPage->update([
+          'author_name' => $this->user()->name(), // only assigned author can call this hook, so we can take $this->user() here
           'update_time' => $newPage->modified('d.m.Y H:i'),
         ]);
         $newPage->changeStatus('unlisted'); // unlisted does not move content/page/ to a seperate folder, so the page cannot be lost

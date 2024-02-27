@@ -8,8 +8,17 @@ fields:
     type: text
     width: 1/2
     help: Content description for accessibility tools, screen readers and search engines.
-
-
+  caption:
+    label: field.blocks.image.caption
+    width: 1/2
+    type: writer
+    icon: text
+    marks:
+      - link
+      - bold
+      - italic
+    nodes: false
+    inline: true
 
 
 

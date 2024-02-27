@@ -1,0 +1,4 @@
+title: Admin
+
+fields:
+  external_link_list: fields/external_link_list

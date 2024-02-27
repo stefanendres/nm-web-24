@@ -1,0 +1,38 @@
+name: Slideshow #field.blocks.gallery.name
+icon: images
+preview: gallery
+fields:
+  images:
+    label: field.blocks.gallery.images.label
+    type: files
+    query: model.images
+    multiple: true
+    layout: cards
+    size: small
+    empty: field.blocks.gallery.images.empty
+    uploads:
+      template: image
+    image:
+      ratio: 1/1
+  #caption:
+  #  label: field.blocks.image.caption
+  #  type: writer
+  #  icon: text
+  #  inline: true
+  ratio:
+    label: Frame aspect-ratio
+    width: 1/4
+    type: select
+    placeholder: "Please select" 
+    options:
+      1/1: "1:1"
+      4/5: "4:5"
+      5/4: "5:4"
+      3/4: "3:4"
+      4/3: "4:3"
+      9/16: "9:16"
+      16/9: "16:9"
+  #crop:
+  #  label: field.blocks.image.crop
+  #  type: toggle
+  #  width: 1/2

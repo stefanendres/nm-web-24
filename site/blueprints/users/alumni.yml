@@ -54,3 +54,6 @@ permissions:
     create: false
     delete: false
     update: false
+
+fields:
+  external_link_list: fields/external_link_list
