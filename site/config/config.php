@@ -37,7 +37,7 @@ return [
         '1600w' => ['width' => round(2000*$s), 'quality' => $q],
         '2000w' => ['width' => round(4000*$s), 'quality' => $q]
       ],
-      'image_66' => [
+      'image_66.666' => [
         '320w' => ['width' => round((2/3)*400*$s), 'quality' => $q, 'format' => 'webp'],
         '400w' => ['width' => round((2/3)*800*$s), 'quality' => $q, 'format' => 'webp'],
         '800w' => ['width' => round((2/3)*1200*$s), 'quality' => $q, 'format' => 'webp'],
@@ -45,7 +45,7 @@ return [
         '1600w' => ['width' => round((2/3)*2000*$s), 'quality' => $q, 'format' => 'webp'],
         '2000w' => ['width' => round((2/3)*4000*$s), 'quality' => $q, 'format' => 'webp']
       ],
-      'image_66_fallback' => [
+      'image_66.666_fallback' => [
         '320w' => ['width' => round((2/3)*400*$s), 'quality' => $q],
         '400w' => ['width' => round((2/3)*800*$s), 'quality' => $q],
         '800w' => ['width' => round((2/3)*1200*$s), 'quality' => $q],
@@ -69,7 +69,7 @@ return [
         '1600w' => ['width' => round((1/2)*2000*$s), 'quality' => $q],
         '2000w' => ['width' => round((1/2)*4000*$s), 'quality' => $q]
       ],
-      'image_33' => [
+      'image_33.333' => [
         '320w' => ['width' => round((1/3)*400*$s), 'quality' => $q, 'format' => 'webp'],
         '400w' => ['width' => round((1/3)*800*$s), 'quality' => $q, 'format' => 'webp'],
         '800w' => ['width' => round((1/3)*1200*$s), 'quality' => $q, 'format' => 'webp'],
@@ -77,7 +77,7 @@ return [
         '1600w' => ['width' => round((1/3)*2000*$s), 'quality' => $q, 'format' => 'webp'],
         '2000w' => ['width' => round((1/3)*4000*$s), 'quality' => $q, 'format' => 'webp']
       ],
-      'image_33_fallback' => [
+      'image_33.333_fallback' => [
         '320w' => ['width' => round((1/3)*400*$s), 'quality' => $q],
         '400w' => ['width' => round((1/3)*800*$s), 'quality' => $q],
         '800w' => ['width' => round((1/3)*1200*$s), 'quality' => $q],

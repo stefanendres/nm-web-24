@@ -27,11 +27,12 @@
 
 <?= css(['assets/styles/'.get_filename('assets/styles/*.css'), '@auto']) ?>
 <?= js(['assets/scripts/plugins/modernizr.js', '@auto']) ?>
-<?php if ($page->intendedTemplate()->name() == 'post' && $custom_css): ?>
-  <style><?= $custom_css ?></style>
-<?php endif ?>
+
 <?php if ($page->intendedTemplate()->name() == 'post'): ?>
   <?= css(['assets/styles/plugins/hljs.css', '@auto']) ?>
+  <?php if ($custom_css && $page->layout_type() == "advanced"): ?>
+      <style><?= $custom_css ?></style>
+  <?php endif ?>
 <?php endif ?>
 
 </head>

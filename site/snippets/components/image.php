@@ -8,9 +8,10 @@
     </figure>
   <?php else: 
     $ratio = convert_ratio($file->ratio());
+    //$v_padding = ($width) ? $width/$ratio : 100/$ratio;
     $v_padding = 100/$ratio;
     $srcset_fallback = $srcset.'_fallback';
-    $sizes = ($width) ? '(min-width: 2000px) ' . ($width*1/5) . 'vw, (min-width: 1600px) ' . $width*1/4 . 'vw, (min-width: 1200px) ' . $width*1/3 . 'vw, (min-width: 800px) ' . $width*1/2 . 'vw, ' . $width . 'vw' :  'auto'; // see config.php for breakpoints and sizes reference level
+    $sizes = ($width) ? '(min-width: 2000px) ' . $width . 'vw, (min-width: 1600px) ' . $width . 'vw, (min-width: 1200px) ' . $width . 'vw, (min-width: 800px) ' . $width . 'vw, ' . $width . 'vw' :  'auto'; // see config.php for breakpoints and sizes reference level
 
     if (!$alt) {
       $alt = $site_title;
