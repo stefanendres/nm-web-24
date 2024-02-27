@@ -37,3 +37,39 @@ body>div[data-role="alumni"][data-template="post"] .k-field-name-status * {
 .embed-preview>*{
   height: 100% !important;
 }
+
+
+.k-block-type-gallery ul {
+  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+/*.k-block-type-gallery ul {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1px;
+}
+.k-block-type-gallery ul li{
+  display: flex;
+  width: 100%;
+}
+.k-block-type-gallery ul li figure {
+  width: 100%;
+}*/
+
+/*.k-block-type-gallery li:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {
+  display: none;
+}
+.k-block-type-gallery li:nth-child(2) {
+  transform: scale(0.9) translate3d(0,-10%,0);
+}
+.k-block-type-gallery li:nth-child(3) {
+  transform: scale(0.8);
+}*/
+
+/*.k-block-type-gallery li:not(:first-child) figure{
+  position: absolute;
+  width: 100%;
+}*/
