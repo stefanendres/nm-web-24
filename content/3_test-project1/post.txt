@@ -1,0 +1,61 @@
+Title: Test Project1
+
+----
+
+Category: 
+
+----
+
+Tags: 
+
+----
+
+Year-select: 
+
+----
+
+Participants: 
+
+----
+
+Related-posts: 
+
+----
+
+Preview-image: 
+
+----
+
+Description: <p>Kurzbeschreibung Kurzbeschreibung Kurzbeschreibung Kurzbeschreibung Kurzbeschreibung Kurzbeschreibung</p>
+
+----
+
+Layout-type: advanced
+
+----
+
+Blocks: 
+
+----
+
+Layout: [{"attrs":[],"columns":[{"blocks":[],"id":"7d078c61-6844-418b-9244-aef8ec81e5c2","width":"1/1"}],"id":"7c7ed957-fe41-48ce-a048-3c7b8d356f89"}]
+
+----
+
+Css-code: [{"content":{"code":""},"id":"ab8f1150-ad2f-4066-af52-cdb23a0e31d3","isHidden":false,"type":"code"}]
+
+----
+
+Author-id: IQwuPTwe
+
+----
+
+Author-name: Student2
+
+----
+
+Update-time: 08.02.2024 17:26
+
+----
+
+Uuid: CY1sl1Qj5jmkpq7d

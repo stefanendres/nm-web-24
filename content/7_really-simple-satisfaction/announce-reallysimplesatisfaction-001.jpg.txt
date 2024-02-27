@@ -1,0 +1,13 @@
+Alt: preview image
+
+----
+
+Caption: Caption text
+
+----
+
+Uuid: r00MoCuznaASCmnN
+
+----
+
+Template: image

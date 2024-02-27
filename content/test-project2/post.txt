@@ -1,0 +1,61 @@
+Title: Test Project2
+
+----
+
+Category: project
+
+----
+
+Tags: CSS
+
+----
+
+Year-select: 
+
+----
+
+Participants: 
+
+----
+
+Related-posts: 
+
+----
+
+Preview-image: 
+
+----
+
+Description: 
+
+----
+
+Layout-type: 
+
+----
+
+Blocks: 
+
+----
+
+Layout: 
+
+----
+
+Css-code: [{"content":{"code":""},"id":"382f815b-9db8-42ca-8b0a-f9babede33d3","isHidden":false,"type":"code"}]
+
+----
+
+Author-id: IQwuPTwe
+
+----
+
+Author-name: Student2
+
+----
+
+Update-time: 08.02.2024 18:48
+
+----
+
+Uuid: QUbK5PhXJj8aik0z

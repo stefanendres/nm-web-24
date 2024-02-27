@@ -1,0 +1,61 @@
+Title: Test Project3
+
+----
+
+Category: project
+
+----
+
+Tags: 
+
+----
+
+Year-select: 
+
+----
+
+Participants: 
+
+----
+
+Related-posts: 
+
+----
+
+Preview-image: 
+
+----
+
+Description: 
+
+----
+
+Layout-type: 
+
+----
+
+Blocks: 
+
+----
+
+Layout: 
+
+----
+
+Css-code: [{"content":{"code":""},"id":"988e00b3-5f6a-49ab-b626-c5d746c8e0e5","isHidden":false,"type":"code"}]
+
+----
+
+Author-id: IQwuPTwe
+
+----
+
+Author-name: Student2
+
+----
+
+Update-time: 08.02.2024 17:40
+
+----
+
+Uuid: uNmnUSAr3aTgIyRT

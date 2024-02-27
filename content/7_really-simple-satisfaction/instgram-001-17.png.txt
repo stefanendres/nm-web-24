@@ -1,0 +1,5 @@
+Uuid: QEhbW89UTuXBPmnE
+
+----
+
+Template: slider_image

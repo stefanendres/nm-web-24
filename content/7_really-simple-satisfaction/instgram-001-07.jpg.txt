@@ -1,0 +1,5 @@
+Uuid: YAWOOIzz6135NnoP
+
+----
+
+Template: slider_image

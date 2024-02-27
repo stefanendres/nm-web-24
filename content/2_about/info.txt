@@ -1,0 +1,50 @@
+Title: About
+
+----
+
+About-headline: 〜 what is New Media?
+
+----
+
+About-text: <p>The New Media area of studies was established at the end of 2003 in the Visual Communication program at the Kunsthochschule Kassel.</p><p>The study of New Media means entering into an artistic or creative confrontation with technologies. It is about researching and developing future infrastructures, accepting aberrations and learning from them. Students are challenged to critically question and reflect on their enthusiasm for technology and to renegotiate it in theoretical and social discourses. Again and again we leave established strategies of communication to discover new things.</p><p>No previous knowledge is required for admission to the class. However, curiosity, enthusiasm and the willingness to experiment are prerequisites. The handling of technology is taught in workshops, seminars and, for the most part, through the class network.</p><p>The New Media class offers interested students the freedom, time and protection to pursue their own interests in the form of a collective in the classrooms, to sharpen their own opinions and to conduct research on an experimental basis. The goal is to develop one's own position, method and field of interest (research area). The occupation with the latest technologies takes place without a fixed and predetermined reason. The experiment is preferred to a defined benefit.</p><p>The term New Media dates back to the 1960s. The research conducted since then has led to the freedom and self-empowerment of users (producers and consumers), to new art forms and has revolutionized existing art and design forms. The digitalization of the media has led to tensions in society and politics. Established values, laws and rituals must be constantly questioned, updated and introduced into public discourse. (e.g. : surveillance, property, privacy, cyberterror, hacking, etc...)</p><p>With the boundless advent of digitalization, established media such as film, graphics, illustration and photography are experiencing a renaissance. The Internet facilitates the distribution, criticism and evaluation of digitally generated or digitized content - new media as an interface between traditionally established media and the user. The focus is on research into technical innovations, artistic experiments and activist interventions in the process of mediation.</p><p>The principle of academic freedom is designed to make sure that powers outside the university, including government and corporations, are not able to control the curriculum or intervene in extra-mural speech.<br>– Judith Butler</p>
+
+----
+
+Teaching-staff:
+
+- 
+  name: Name Staff 1
+  status: active
+  role: teacher
+  timespan: ""
+  profile_picture: [ ]
+  email: ""
+  website: ""
+- 
+  name: Name Staff 2
+  status: inactive
+  role: guest_lecturer
+  timespan: ""
+  profile_picture: [ ]
+  email: ""
+  website: ""
+- 
+  name: ""
+  status: active
+  role: prof
+  timespan: ""
+  profile_picture: [ ]
+  email: ""
+  website: ""
+
+----
+
+Uuid: aQ5cfiyIpoaVLyjI
+
+----
+
+Author-id: tusjzgQ1
+
+----
+
+Author-name: 

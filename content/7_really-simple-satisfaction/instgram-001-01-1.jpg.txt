@@ -1,0 +1,5 @@
+Uuid: M5Cs9oPDKoDMXDOV
+
+----
+
+Template: slider_image

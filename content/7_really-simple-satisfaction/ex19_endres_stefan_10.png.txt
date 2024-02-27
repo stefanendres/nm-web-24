@@ -1,0 +1,5 @@
+Uuid: aFif2TnB5vVUxUuy
+
+----
+
+Template: files/image

@@ -1,0 +1,61 @@
+Title: Really Simple Satisfaction
+
+----
+
+Category: graduation_project
+
+----
+
+Tags: Net Art, Website, Experimental, Feed, Trending Content, Social Media, User Experience, Doom Scrolling
+
+----
+
+Year-select: 2019
+
+----
+
+Participants: 
+
+----
+
+Related-posts: 
+
+----
+
+Preview-image: - file://r00MoCuznaASCmnN
+
+----
+
+Description: <p>Really Simple Satisfaction obtains its data automatically from the most important current topics on the Internet. It prepares these for the visitor as an imitation and further development of the interfaces of social media feeds, in the form of an audio-visual cocktail.</p>
+
+----
+
+Layout-type: 
+
+----
+
+Blocks: [{"content":{"level":"","text":"Really Simple Satisfaction"},"id":"8c1325b5-c821-44ee-bf49-4206288c6da0","isHidden":false,"type":"heading"},{"content":{"text":"As a website, <strong>Really Simple Satisfaction</strong> obtains its data automatically from the most important current topics on the Internet. The processes behind Really Simple Satisfaction detach the entire content of thousands of websites from their regional and chronological origin. Really Simple Satisfaction atomizes related posts into many individual pieces of text, images and videos, interface icons or embedded media and delivers them to the user in the form of a well-shaken audio-visual cocktail that refills itself again and again as soon as it is almost empty. Does a machine, a system, really have to use so much more \"intelligence\" and knowledge when delivering information than a human being, who seems to dissolve a large part of his mind when consuming on the screen?"},"id":"1f220322-6a9f-4757-aaf2-7e7ba40ba268","isHidden":false,"type":"text"},{"content":{"image":["file://QJatj27KTrAXUDSY"],"src":"","alt":"wdwqdwwd","location":"kirby","caption":"jtzujruj"},"id":"679fbc9b-adf7-4933-a13f-b747b2e610f6","isHidden":false,"type":"image"},{"content":{"images":["file://ZigjLPHdF43uSysD","file://kSTrxpLceFXQG5UZ","file://Pwzia7eQEnCn9wN2","file://z3aKznlXiTy4SWyI","file://M5Cs9oPDKoDMXDOV"],"ratio":"9/16"},"id":"df120b84-61bd-4c2b-8156-be3e2ad97623","isHidden":false,"type":"gallery"},{"content":{"code":"if (project.id !== target_project.id && project.is_expanded) {\n      //document.title = page.site_title+' - '+page.title\n      //window.history.pushState({}, page.site_title+' - '+page.title, window.history.state.prevUrl)\n\n      project.embeds.forEach((embed) => {\n        embed.innerHTML = '' // \"unload\" embeds to be able to stop playing while closing the project-container\n      })\n      project.container.classList.remove('expanded')\n      project.is_expanded = false\n      page.project_expanded = false\n    }","language":"js"},"id":"90609ea2-38d9-4f05-88ec-8cfef1989a7b","isHidden":false,"type":"code"},{"content":{"code":"","ratio":""},"id":"63285e41-3007-4925-8e76-43486d8e3836","isHidden":false,"type":"embed"},{"content":{"code":"<iframe src=\"https://reallysimplesatisfaction.stefanendres.com/ReallySimpleSatisfaction-2020.mp4\"></iframe>","ratio":"1/1"},"id":"be2b1454-bd95-49a9-98e6-986c45ff3878","isHidden":false,"type":"embed"}]
+
+----
+
+Layout: [{"attrs":[],"columns":[{"blocks":[{"content":{"image":["file://UpfIKJ1kLj7nySCn"],"src":"","alt":"aaaaa","location":"kirby","caption":"eflnwefwef<br>we<br>Fw<br>ef<br>"},"id":"b34c717c-f103-444d-9c46-f57af6821d24","isHidden":false,"type":"image"}],"id":"ec87dffd-5dc6-4ad9-991b-95273b3986d6","width":"1/1"}],"id":"fe917b0d-fc00-4e98-920e-59da613b8d32"},{"attrs":[],"columns":[{"blocks":[{"content":{"image":["file://QJatj27KTrAXUDSY"],"src":"","alt":"","location":"kirby","caption":""},"id":"4b7bde89-6231-4fc1-9a7f-7f4f383697bd","isHidden":false,"type":"image"}],"id":"7c7379fb-7240-4feb-9bf6-6df2cb6a41f6","width":"1/1"}],"id":"10e654c6-3870-4ce0-9b11-a69dba43ecb5"},{"attrs":[],"columns":[{"blocks":[{"content":{"image":["file://xXQH5ZuhiwVUd7j7"],"src":"","alt":"","location":"kirby","caption":""},"id":"3b60e686-3f51-40f0-8ff4-55552091fb9c","isHidden":false,"type":"image"}],"id":"1b548f19-cb71-4d8e-af19-7ed925e76821","width":"1/1"}],"id":"8d6a6032-fdb0-4025-9fd8-26fb498eabda"},{"attrs":[],"columns":[{"blocks":[{"content":{"image":["file://5G06S4RTxYdSe49M"],"src":"","alt":"","location":"kirby","caption":""},"id":"906c2325-bae3-427f-ab74-181f9e71c055","isHidden":false,"type":"image"}],"id":"9f9c4edd-44d6-49f5-9dc3-f736e7f4df98","width":"1/1"}],"id":"c336146c-5c29-475d-b083-bf8da142d0b6"},{"attrs":[],"columns":[{"blocks":[{"content":{"image":["file://0Bu0FdoxS6360jqX"],"src":"","alt":"","location":"kirby","caption":""},"id":"e0d3eaa0-1084-49d1-b252-28967d5595c8","isHidden":false,"type":"image"}],"id":"6d94fdd3-9e2c-4955-ad7e-8ea67b230b27","width":"1/1"}],"id":"48b7e72a-a7b3-45b6-9f00-4709165b3fb3"},{"attrs":[],"columns":[{"blocks":[{"content":{"level":"h3","text":"Does a system really have to use so much more \"intelligence\" for supplying information to humans, who seem to dissolve a large part of their mind when consuming on screen?"},"id":"9b71d25f-336f-462e-a071-0ff1ac5ebcd6","isHidden":false,"type":"heading"}],"id":"326c9317-3e73-4256-997b-0aedf2e251c6","width":"1/1"}],"id":"b5cb472c-34aa-42ce-9208-c532c869fd5e"},{"attrs":[],"columns":[{"blocks":[{"content":{"image":["file://kbyk2dnhXPf8qvTB"],"src":"","alt":"","location":"kirby","caption":""},"id":"29a27335-0b61-4292-aec2-d69aceb94b4d","isHidden":false,"type":"image"}],"id":"ecad14d2-a0f4-4cb6-b6a8-2203c6778431","width":"1/3"},{"blocks":[{"content":{"text":"As a website, <em>Really Simple Satisfaction</em> obtains its data automatically from the most important current topics on the Internet.  The processes behind Really Simple Satisfaction detach the entire content of thousands of websites from their regional and chronological origin. Really Simple Satisfaction atomizes related posts into many individual pieces of text, images and videos, interface icons or embedded media and delivers them to the user in the form of a well-shaken audio-visual cocktail that refills itself again and again as soon as it is almost empty.  Does a machine, a system, really have to use so much more \"intelligence\" and knowledge when delivering information than a human being, who seems to dissolve a large part of his mind when consuming on the screen?"},"id":"10382bc2-ca66-4b1c-9eac-b6972610fd89","isHidden":false,"type":"text"}],"id":"afb65dc8-44a5-4b78-923b-f0b2756c16ba","width":"1/3"},{"blocks":[{"content":{"image":["file://aFif2TnB5vVUxUuy"],"src":"","alt":"","location":"kirby","caption":""},"id":"76927f92-4882-44fc-8c53-fe1d4f2c0088","isHidden":false,"type":"image"}],"id":"1580d3a3-6864-4239-8ebf-16eb949f6597","width":"1/3"}],"id":"ce2810b4-4705-4592-94fa-5ff4777f28aa"},{"attrs":[],"columns":[{"blocks":[{"content":{"text":"As a website, <strong>Really Simple Satisfaction</strong> obtains its data automatically from the most important current topics on the Internet. The processes behind Really Simple Satisfaction detach the entire content of thousands of websites from their regional and chronological origin. Really Simple Satisfaction atomizes related posts into many individual pieces of text, images and videos, interface icons or embedded media and delivers them to the user in the form of a well-shaken audio-visual cocktail that refills itself again and again as soon as it is almost empty. Does a machine, a system, really have to use so much more \"intelligence\" and knowledge when delivering information than a human being, who seems to dissolve a large part of his mind when consuming on the screen?"},"id":"b7c26383-6c94-452b-b964-d9ac8f5201e3","isHidden":false,"type":"text"}],"id":"73f70925-2eb4-4059-b68d-b48a2b53aa3e","width":"2/3"},{"blocks":[{"content":{"image":["file://r00MoCuznaASCmnN"],"src":"","alt":"","location":"kirby","caption":""},"id":"f015086f-6860-4df1-9fcf-41478c9b90b6","isHidden":false,"type":"image"}],"id":"1504ca3e-9e5d-45bf-b0ab-ff7d21b89cea","width":"1/3"}],"id":"ee8aca6b-8b15-4452-840b-07713e4628f4"},{"attrs":[],"columns":[{"blocks":[{"content":{"images":["file://ZigjLPHdF43uSysD","file://M5Cs9oPDKoDMXDOV","file://z3aKznlXiTy4SWyI","file://Pwzia7eQEnCn9wN2","file://kSTrxpLceFXQG5UZ","file://YAWOOIzz6135NnoP","file://fHqaryeUlXMfC2ok","file://6ZBaPWlakjaBkdP6","file://hJpZlLqY3sOAqKTc","file://Y28cWtGG3LAQRscd","file://XM99JXKc7k77BWNy","file://YnfD6kdkEqfon6AL","file://S4GfcnHkbdX9OMh2","file://QEhbW89UTuXBPmnE","file://0JQYbyGpTiDxZ0zo","file://RZvQJiKXdbw4MXJc","file://6d8RmobWqIdpI9T5","file://gsNU0pbdr85PDkLP"],"ratio":"9/16"},"id":"f3401315-814b-4cb2-8297-44ee436b1eda","isHidden":false,"type":"gallery"}],"id":"a34a8ffe-aa8a-4e84-94b8-407509aa109d","width":"1/3"},{"blocks":[{"content":{"level":"h4","text":"Really Simple Satisfaction"},"id":"bf9f00f1-c50b-4f71-8c4c-c73bc99d11b2","isHidden":false,"type":"heading"},{"content":{"text":"As a website, Really Simple Satisfaction obtains its data automatically from the most important current topics on the Internet. The processes behind Really Simple Satisfaction detach the entire content of thousands of websites from their regional and chronological origin. Really Simple Satisfaction atomizes related posts into many individual pieces of text, images and videos, interface icons or embedded media and delivers them to the user in the form of a well-shaken audio-visual cocktail that refills itself again and again as soon as it is almost empty. Does a machine, a system, really have to use so much more \"intelligence\" and knowledge when delivering information than a human being, who seems to dissolve a large part of his mind when consuming on the screen?"},"id":"6a4b6e7f-3622-4d15-88e5-c217500f4540","isHidden":false,"type":"text"}],"id":"b2f3c1fc-f638-4fa5-b92f-97f27d779488","width":"2/3"}],"id":"e6f7bf51-82f9-4a60-9bcf-df8a4e040456"},{"attrs":[],"columns":[{"blocks":[{"content":{"code":"// create worker for handling xhr-requests\n\tlet request_worker = new Worker('./public/workers/request_worker.js');\n\n\t// start request-worker to get trends xml-data\n\trequest_worker.postMessage({\n\t\t'type' : 'trends',\n\t\t'proxy' : CORS_PROXY,\n\t\t'url' : null // if url is null, urls from trends-array (listed listed in request_worker.js) are used\n\t});","language":"js"},"id":"b9b21337-6739-4a6f-868c-9d91a4390621","isHidden":false,"type":"code"}],"id":"f9c83844-55d8-4c7d-825c-c0ed18c23a65","width":"1/3"},{"blocks":[{"content":{"code":"<iframe src=\"https://reallysimplesatisfaction.stefanendres.com/ReallySimpleSatisfaction-2020.mp4\"></iframe>","ratio":"9/16"},"id":"74fad63e-3b5b-4fbb-8c4d-4018be46f976","isHidden":false,"type":"embed"}],"id":"8c345787-352d-467f-9791-09651a1eed1f","width":"1/3"},{"blocks":[{"content":{"code":"function get_content($file,$url,$hours = 12,$fn = '',$fn_args = '') {\n\t$current_time = time();\n\t$expire_time = $hours * 60 * 60;\n\t$file_time = filemtime($file);\n\tif(file_exists($file) && ($current_time - $expire_time < $file_time)) {\n\t\treturn file_get_contents($file);\n\t}\n\telse {\n\t\t$content = get_url($url);\n\t\tif($fn) {\n\t\t\t$content = $fn($content,$fn_args);\n\t\t}\n\t\tfile_put_contents($file,$content);\n\t\treturn $content;\n\t}\n}","language":"php"},"id":"1efea733-45d1-4382-9df9-882d89320b74","isHidden":false,"type":"code"}],"id":"988522f1-0699-4caf-a4b9-08a6eeac1ed5","width":"1/3"}],"id":"623bcf5a-72b9-41e7-af56-159119a84d84"},{"attrs":[],"columns":[{"blocks":[{"content":{"images":["file://ZigjLPHdF43uSysD","file://kSTrxpLceFXQG5UZ","file://Pwzia7eQEnCn9wN2","file://z3aKznlXiTy4SWyI","file://M5Cs9oPDKoDMXDOV"],"ratio":"9/16"},"id":"95832da7-95da-4e2e-9f8e-9fd0fdccbade","isHidden":false,"type":"gallery"}],"id":"ff8865f6-e85a-45c4-bc87-049078328840","width":"1/1"}],"id":"34d92a72-0096-4a35-869a-e7206cbfd6c6"}]
+
+----
+
+Css-code: [{"content":{"code":"body {\nbackground-color:rgb(50,110,50);\n}"},"id":"31afa2e0-62c4-4ad5-ad24-4e192e21a0c2","isHidden":false,"type":"code"}]
+
+----
+
+Update-time: 26.02.2024 17:47
+
+----
+
+Author-id: 0Uh6UncI
+
+----
+
+Author-name: Student1
+
+----
+
+Uuid: HqCMGpm4j3gJyhpT

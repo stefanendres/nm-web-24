@@ -1,0 +1,61 @@
+Title: leHFJJKBWF
+
+----
+
+Category: project
+
+----
+
+Tags: Video, Painting
+
+----
+
+Year-select: 2003, 2020
+
+----
+
+Participants: 
+
+----
+
+Related-posts: 
+
+----
+
+Preview-image: 
+
+----
+
+Description: 
+
+----
+
+Layout-type: advanced
+
+----
+
+Blocks: [{"content":{"level":"","text":""},"id":"2400d2bc-4d77-4322-a8c8-1525ea80ff34","isHidden":false,"type":"heading"},{"content":{"image":[],"src":"","alt":"","location":"kirby"},"id":"8bae13ab-af3c-4770-9377-26f529a0dce0","isHidden":false,"type":"image"},{"content":{"images":[],"ratio":""},"id":"2fb3d7b8-86c5-4d67-be0f-439bfa8b6115","isHidden":false,"type":"gallery"},{"content":{"code":"","language":"text"},"id":"98a27f6a-294e-49ed-876e-9668e8074cb8","isHidden":false,"type":"code"}]
+
+----
+
+Layout: [{"attrs":[],"columns":[{"blocks":[{"content":{"level":"","text":"Headin"},"id":"d450af2f-7915-44f5-92b0-e3f7d070d199","isHidden":false,"type":"heading"}],"id":"693aff1d-bb46-4ca1-bbc9-987d5ad5f8eb","width":"1/2"},{"blocks":[],"id":"f40db9de-cbbe-4f57-9ae3-40c6a1a8b7be","width":"1/2"}],"id":"50f4434b-24dd-4be7-8379-0fc7fde5146b"},{"attrs":[],"columns":[{"blocks":[],"id":"ae358827-e2b2-4037-b58c-6791df9a5487","width":"1/3"},{"blocks":[],"id":"3be5a081-186d-4e40-9dce-80fe7b379be8","width":"1/3"},{"blocks":[],"id":"ece18736-e20e-4fe8-95da-a0a3c1a62b7e","width":"1/3"}],"id":"59ce8f8f-c654-4d7a-a0e6-4701e02cefe6"},{"attrs":[],"columns":[{"blocks":[],"id":"f6e26754-b32c-4816-8c4e-f337c1164203","width":"1/1"}],"id":"c13265c7-77a8-41b2-aad6-c20b4337ee0f"},{"attrs":[],"columns":[{"blocks":[],"id":"71e26ab8-48b1-49c2-aa76-2d556241b6a6","width":"1/3"},{"blocks":[],"id":"0cba9a72-e27c-46a3-869d-21a6fa56cc86","width":"1/3"},{"blocks":[],"id":"3ef7b628-49db-4a78-8658-ec92fd58ea0c","width":"1/3"}],"id":"e42aae33-af2f-400f-9d8b-abe33b6a8a7a"}]
+
+----
+
+Css-code: [{"content":{"code":""},"id":"1eafa3b7-2ccc-4c09-981a-c878284334a0","isHidden":false,"type":"code"}]
+
+----
+
+Author-id: IQwuPTwe
+
+----
+
+Author-name: Student2
+
+----
+
+Update-time: 09.02.2024 10:43
+
+----
+
+Uuid: aj2AT6ZTLIiUFOZp

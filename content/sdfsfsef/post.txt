@@ -1,0 +1,61 @@
+Title: sdfsfsef
+
+----
+
+Category: project
+
+----
+
+Tags: CSS, Video
+
+----
+
+Year-select: 
+
+----
+
+Participants: 
+
+----
+
+Related-posts: 
+
+----
+
+Preview-image: 
+
+----
+
+Description: 
+
+----
+
+Layout-type: 
+
+----
+
+Blocks: 
+
+----
+
+Layout: 
+
+----
+
+Css-code: [{"content":{"code":""},"id":"f8287fcd-4cb8-4476-b9f8-2ae97191a2d9","isHidden":false,"type":"code"}]
+
+----
+
+Author-id: IQwuPTwe
+
+----
+
+Author-name: Student2
+
+----
+
+Update-time: 09.02.2024 10:45
+
+----
+
+Uuid: 5JkBTRq8A2acjTB1
