@@ -1,0 +1,58 @@
+.template-legal{
+  section {
+    color: $blue;
+    padding: calc(var(--space_0) * 8);
+    p,
+    a {
+      @include heading-medium;
+      color: $blue;
+    }
+    a {
+      color: $orange;
+    }
+    p {
+      margin: calc(var(--fs_l) * 1.125 * 0.5) calc(var(--fs_l) * 1.125 * 4.5) calc(var(--fs_l) * 1.125 * 0.5) 0;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @include heading-large;
+      margin-top: calc(var(--fs_xl) * 1.125 * 0.5);
+      margin-right: calc(var(--fs_l) * 1.125 * 4.5);
+      width: auto;
+    }
+  }
+}
+
+@media all and (orientation: portrait) and (max-width: #{$break_s}) {
+  .template-legal section{
+    padding: calc(var(--space_0) * 4);
+    p,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: var(--fs_s);
+      line-height: calc(var(--fs_s) * 1.125);
+    }
+    p{
+      hyphens: auto;
+      margin: calc(var(--fs_s) * 1.125 * 0.5) 0;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: calc(var(--fs_s) * 1.125 * 0.5);
+      text-align: left;
+    }
+  }
+}

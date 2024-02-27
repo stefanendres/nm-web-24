@@ -1,0 +1,78 @@
+// colors
+$black: #000;
+$white: #fff; // mind head.php theme-color
+
+$grey_0: #f0f0f0;
+$grey_1: #828282;
+
+$blue: #3a82f7;
+$orange: #F59E00;
+
+//layout
+$break_xxs: 320px;
+$break_xs: 400px;
+$break_s: 800px;
+$break_m: 1200px;
+$break_l: 1600px;
+$break_xl: 2000px;
+
+//fonts
+$sans_regular: Arial, Helvetica, sans-serif;
+
+:root{
+  --fs_s: 3vw;
+  --fs_m: 4vw;
+  --fs_l: 6vw;
+
+  --space_0: 0.75vw; // 3px *** 3/4vw
+  
+  --br_0: 3vw;
+  --bw_s: 1px;
+
+  --vp_h: 100vh; // fallback
+}
+/*
+@media all and (min-width: #{$break_s}) {
+  // 50% vp --> x1/2
+  :root {
+    --fs_s: calc(3vw/2);
+    --fs_m: calc(4vw/2);
+    --fs_l: calc(6vw/2);
+    --space_0: calc(0.75vw/2);
+    --br_0: calc(3vw/2);
+  }
+}
+
+@media all and (min-width: #{$break_m}) {
+  // 33.333% vp --> x1/3
+  :root {
+    --fs_s: calc(3vw/3);
+    --fs_m: calc(4vw/3);
+    --fs_l: calc(6vw/3);
+    --space_0: calc(0.75vw/3);
+    --br_0: calc(3vw/3);
+  }
+}
+
+@media all and (min-width: #{$break_l}) {
+  // 25% vp --> x1/4
+  :root {
+    --fs_s: calc(3vw/4);
+    --fs_m: calc(4vw/4);
+    --fs_l: calc(6vw/4);
+    --space_0: calc(0.75vw/4);
+    --br_0: calc(3vw/4);
+  }
+}
+
+@media all and (min-width: #{$break_xl}) {
+  // 20% vp --> x1/5
+  :root {
+    --fs_s: calc(3vw/5);
+    --fs_m: calc(4vw/5);
+    --fs_l: calc(6vw/5);
+    --space_0: calc(0.75vw/5);
+    --br_0: calc(3vw/5);
+  }
+}
+*/

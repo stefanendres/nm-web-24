@@ -1,0 +1,189 @@
+*{
+  box-sizing: border-box;
+}
+
+html.touchevents * {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+html{
+  font-feature-settings: "kern" 1, "lnum" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+
+	overflow-x: clip;
+  overflow-y: scroll;
+  font-family: $sans_regular;
+}
+
+body{
+  display: flex; // fixes layout-shifts
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: clip;
+  html.no-touchevents &{
+    &.is-fixed{
+      max-width: calc(100vw - var(--sb_w, 15px));
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      scrollbar-width: none;
+    }
+  }
+}
+
+
+main{
+	display: flex;
+	flex-direction: column;
+  position: relative;
+	width: 100%;
+  height: 100%;
+  min-height: var(--vp_h);
+  
+  opacity: 0;
+  transition: opacity 0.15s ease-out;
+  .page-loaded &{
+    opacity: 1;
+  }
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+button{
+	cursor: pointer;
+	padding: 0;
+	background: none;
+	border: none;
+	font: inherit;
+  color: $black;
+}
+
+ul, ol{
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a{
+	color: $black;
+	cursor: pointer;
+	text-decoration: none;
+  hyphens: none;
+  white-space: nowrap;
+}
+
+p > a {
+  white-space: break-spaces;
+}
+
+iframe{
+  border: none;
+}
+
+img,
+video,
+figure{
+	touch-action: manipulation;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+figure{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: clip;
+  picture{
+    // inherits styles from figure
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  img{
+    // position: absolute not needed when aspect-ratio is used, but aspect-ratio is not support by older safaris
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    transform: translate3d(0,0,0);
+    z-index: 2;
+    //isolation: isolate;
+    object-fit: cover;
+    //overflow: hidden;
+  }
+  figcaption{
+    position: absolute;
+    bottom: 0;
+  }
+  &:not(.svg-wr)>svg { //loading-spinner
+    position: absolute;
+    width: calc(var(--space_0) * 6);
+    height: calc(var(--space_0) * 6);
+    bottom: calc(50% - var(--space_0) * 3);
+    z-index: 1;
+  }
+}
+
+img{
+  visibility: hidden; // dev
+  transition: opacity 0.15s ease-in-out;
+  opacity: 0;
+  .page-loaded &{
+    visibility: visible;
+  }
+  pointer-events: none;
+}
+
+img.lazyloaded{
+  opacity: 1;
+}
+.svg-wr{
+  display: flex;
+  width: auto;
+  height: 100%;
+  svg{
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+}
+
+
+@media all and (min-width: #{$break_s}) {
+
+}

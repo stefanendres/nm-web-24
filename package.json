@@ -1,0 +1,40 @@
+{
+  "name": "NewMediaKassel",
+  "description": "Basic Frontend-Development-Environment for Kirby CMS",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "stefanendres.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.7",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.5.1",
+    "browserify": "^16.5.0",
+    "esmify": "^2.1.1",
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "hash-style": "rm ./assets/styles/style.*.css && mv ./assets/styles/style.css \"./assets/styles/style.$(md5 -q ./assets/styles/style.css).css\"",
+    "hash-script": "rm ./assets/scripts/app.*.js && mv ./assets/scripts/app.js \"./assets/scripts/app.$(md5 -q ./assets/scripts/app.js).js\"",
+    "build-styles": "node-sass --include-path scss ./frontend/scss/index.scss ./junk/bundle.css --output-style compressed && npx postcss ./junk/bundle.css --no-map --use autoprefixer -o ./assets/styles/style.css && rm ./junk/bundle.css && npm run hash-style",
+    "build-scripts": "babel frontend/js/*.js --compact=true --presets=babel-preset-env -o ./junk/build.js && browserify -p esmify ./junk/build.js -o ./junk/bundle.js && babel ./junk/bundle.js --presets=babel-preset-minify -o ./assets/scripts/app.js --no-comments && rm ./junk/build.js ./junk/bundle.js && npm run hash-script",
+    "build": "npm run build-styles && npm run build-scripts",
+    "dev": "node file-watcher.js"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "got": "^12.4.1",
+    "jsdom": "^16.2.2",
+    "lazysizes": "^5.3.2",
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
+    "node-watch": "^0.6.3",
+    "postcss-cli": "^9.1.0",
+    "smoothscroll-polyfill": "^0.4.4",
+    "swiper": "^8.4.2"
+  }
+}

@@ -1,0 +1,23 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  &-minimal,
+  &-simple{
+    width: 50%;
+  }
+  &-advanced{
+    width: 100%;
+  }
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
