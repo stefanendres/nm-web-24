@@ -48,3 +48,9 @@ Icon
 # ---------------
 
 /site/config/.license
+
+node_modules
+/node_modules
+
+content
+/content
