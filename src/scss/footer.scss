@@ -1,0 +1,36 @@
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  padding: 0 calc(var(--p_xy_1)*0.5) 4.625rem calc(var(--p_xy_1)*0.5);
+  ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  p, a{
+    padding: 0.375em;
+    font-size: 0.75rem;
+    letter-spacing: 0.0125em;
+    color: $grey_2;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.075em;
+    text-underline-offset: 0.125em;
+    text-decoration-color: $grey_1;
+  }
+}
+@media all and (min-width: #{$break_s}) {
+  footer {
+    padding-bottom: 0;
+    justify-content: space-between;
+  }
+}

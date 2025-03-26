@@ -1,0 +1,22 @@
+title: Legal
+pages: false
+files: false
+
+fields:
+  text:
+    label: Text
+    width: 2/3
+    type: writer
+    nodes: 
+      - bulletList
+      - orderedList
+      - heading
+    marks:
+      - link
+      - bold
+      - italic
+      - email
+    headings:
+      - 2
+      - 3
+      - 4

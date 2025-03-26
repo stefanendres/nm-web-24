@@ -1,0 +1,32 @@
+title: Image
+accept:
+  mime: image/jpeg, image/png, image/gif, image/svg+xml
+  maxsize: 8388608
+
+columns:
+  main:
+    width: 1/2
+    sections:
+      data:
+        type: fields
+        fields:
+          alt:
+            type: text
+            width: 1/2
+            help: Content description for accessibility tools, screen readers and search engines.
+          caption:
+            label: field.blocks.image.caption
+            width: 1/2
+            type: writer
+            icon: text
+            marks:
+              - link
+              - bold
+              - italic
+            nodes: false
+            inline: true
+          link_object: fields/link_object
+
+
+
+

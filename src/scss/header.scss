@@ -1,0 +1,93 @@
+body>header{
+  position: fixed;
+  right: 1rem;
+  bottom: 1.5rem;
+  left: 1rem;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: var(--p_xy_1);
+
+  background-color: $white;
+  box-shadow: $shadow_0;
+  border-radius: var(--br_2);
+  button.back {
+    @include button('l_1');
+  }
+  a.page {
+    @include button('l_1');
+  }
+  a.search {
+    @include button('l_3');
+    .icon {
+      height: 0.875em;
+    }
+  }
+  &.post { 
+    button.more {
+      @include button('l_3');
+      .title{
+        overflow: hidden;
+        max-width: 2.5em;
+        transition: opacity 0.15s ease-in-out 0.15s, max-width 0.3s ease-out;
+      }
+      .icon{
+        height: 0.625em;
+        transition: transform 0.3s ease-in-out;
+      }
+      &.is-active{
+        gap: 0;
+        .title{
+          opacity: 0;
+          max-width: 0;
+          transition: opacity 0.15s ease-in-out, max-width 0.15s ease-in;
+        }
+        .icon {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+.site-title{
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%,0,0);
+
+  color: $black;
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: color 0.15s ease-in-out;
+
+  html.no-touch &:hover,
+  &:active {
+    color: $grey_2;
+  }
+}
+
+@media all and (min-width: #{$break_xs}) {
+  body>header {
+    right: 10%;
+    left: 10%;
+  }
+}
+@media all and (min-width: #{$break_s}) {
+  body>header {
+    right: 20%;
+    left: 20%;
+  }
+}
+@media all and (min-width: #{$break_m}) {
+  body>header {
+    right: 30%;
+    left: 30%;
+  }
+}
+
+
+

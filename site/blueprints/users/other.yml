@@ -1,0 +1,57 @@
+title: Other
+# this user role can do nothing an should not have access to the panel
+permissions:
+  access:
+    account: false
+    panel: false
+    site: false
+    languages: false
+    system: false
+    users: false
+  files:
+    create: false
+    changeName: false
+    changeTemplate: false
+    delete: false
+    read: false
+    replace: false
+    update: false
+  languages:
+    create: false
+    delete: false
+  pages:
+    access: false
+    changeSlug: false
+    changeStatus: false
+    changeTemplate: false
+    changeTitle: false
+    create: false
+    delete: false
+    list: false
+    move: false
+    duplicate: false
+    preview: false
+    read: false
+    sort: false
+    update: false
+  site:
+    changeTitle: false
+    update: false
+  user:
+    changeEmail: false
+    changeLanguage: false
+    changeName: false
+    changePassword: false
+    changeRole: false
+    delete: false
+    update: false
+  users:
+    changeEmail: false
+    changeLanguage: false
+    changeName: false
+    changePassword: false
+    changeRole: false
+    create: false
+    delete: false
+    update: false
+

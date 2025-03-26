@@ -1,0 +1,20 @@
+name: field.blocks.text.name
+icon: text
+wysiwyg: true
+preview: text
+fields:
+  text:
+    type: writer
+    nodes: 
+      - bulletList
+      - orderedList
+    marks:
+      - link
+      - bold
+      - italic
+      - email
+    inline: true
+    links: #not working
+      - page
+      - anchor
+    placeholder: field.blocks.text.placeholder

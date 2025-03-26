@@ -1,0 +1,310 @@
+@mixin button($level){
+  display: flex;
+  align-items: center;
+  padding: 0.325em 0.5em 0.35em 0.5em;
+  gap: 0.325em;
+  border-radius: var(--br_1);
+  line-height: 1em; 
+  letter-spacing: 0.0125em;
+  font-weight: 900;
+  transition: background-color 0.15s ease-in-out;
+  @if $level == 'l_0' {
+    background-color: $grey_0;
+    color: $grey_3;
+    html.is-touch &:active,
+    html.no-touch &:hover{
+      background-color: $grey_1;
+      color: $black;
+    }
+  }
+  @if $level == 'l_1' {
+    background-color: $grey_1;
+    color: $black;
+    html.is-touch &:active,
+    html.no-touch &:hover {
+      background-color: $grey_2;
+      color: $black;
+    }
+  }
+  @if $level == 'l_2' {
+    background-color: $grey_2;
+    color: $black;
+    html.is-touch &:active,
+    html.no-touch &:hover {
+      background-color: $grey_3;
+      color: $white;
+    }
+  }
+  @if $level == 'l_3' {
+    background-color: $grey_3;
+    color: $white;
+    html.is-touch &:active,
+    html.no-touch &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+  .icon{
+    display: flex;
+    height: 0.75em;
+    width: auto;
+    svg{
+      display: flex;
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+@mixin label{
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  min-height: calc(var(--p_xy_1) + var(--button_w) + var(--p_xy_1));
+  padding: var(--p_xy_1);
+  border-radius: var(--br_2);
+  overflow: clip;
+  font-weight: 900;
+  line-height: 1em;
+  background-color: $grey_2;
+  color: $white;
+  box-shadow: $shadow_0;
+}
+
+@mixin headline($level){
+  @if $level =='h_2' {
+    /*font-size: 3.75rem;
+    line-height: 3.375rem;
+    letter-spacing: -0.0125em;*/
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.0075em;
+  }
+  @if $level =='h_3' {
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.0075em;
+  }
+  @if $level =='h_4' {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+@mixin wrapper--bars{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: var(--p_xy_1);
+}
+@mixin bar{
+  display: flex;
+  //width: 100%;
+  padding: var(--p_xy_1);
+  overflow: hidden;
+  background-color: $white;
+  box-shadow: $shadow_0;
+  border-radius: var(--br_2);
+  min-height: calc(var(--p_xy_1) + var(--button_w) + var(--p_xy_1));
+}
+@mixin bar--title{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  h2,
+  h3 {
+    width: 100%;
+    padding: 0 var(--p_xy_1);
+    margin: 0;
+    text-align: center;
+    white-space: normal;
+  }
+}
+@mixin bar--title-thumb{
+  @include bar--title;
+  flex-direction: row;
+  padding-right: calc(var(--thumb_w) + var(--p_xy_1));
+  .thumb {
+    border-radius: var(--br_1);
+    width: var(--thumb_w);
+    aspect-ratio: 1/1;
+    padding-bottom: unset !important;
+    figcaption{
+      display: none;
+    }
+  }
+}
+
+@mixin bar--categories-tags{
+  //flex-direction: column;
+  align-items: center;
+  column-gap: 0.375em;
+  flex-wrap: wrap;
+  //.category,
+  .tags{
+    display: inline-flex;
+  }
+  /*.category {
+    font-weight: 900;
+  }*/
+  .tags{
+    font-weight: 900;
+    white-space: normal;
+  }
+}
+
+@mixin bar--authors-participants-years{
+  align-items: center;
+  justify-content: space-between;
+  ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  li {
+    display: inline-flex;
+    font-weight: 900;
+    &:not(:last-child) {
+      margin-right: 0.25rem;
+      &:after {
+        content: ',';
+      }
+    }
+  }
+  // years
+  div {
+    white-space: nowrap;
+  }
+}
+
+@mixin bar--related{
+  flex-direction: column;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &>div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding-left: var(--button_w);
+      font-weight: 900;
+      text-align: center;
+    }
+  }
+
+  button.expand {
+    @include button('l_0');
+    .title {
+      opacity: 0;
+      position: absolute;
+      z-index: -1;
+      pointer-events: none;
+    }
+    .icon {
+      width: 0.625em;
+      height: 0.625em;
+      transition: transform ease-in-out 0.3s;
+    }
+    padding-top: 0.5em;
+    padding-bottom: 0.45em;
+    transition: padding ease-in-out 0.3s;
+    &.is-active {
+      padding-top: 0.40em;
+      padding-bottom: 0.55em;
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  ul {
+    display: flex;
+    max-height: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    overflow: hidden;
+    opacity: 0.2;
+    transition: opacity 0.3s ease-in-out, margin 0.15s ease-in 0.15s, max-height 0.3s ease-out;
+
+    &.is-active {
+      opacity: 1;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      max-height: 20rem;
+      transition: opacity 0.15s ease-in-out, margin 0.15s ease-out, max-height 0.9s ease-out;
+    }
+  }
+  li {
+    @include button('l_0')
+  }
+}
+
+@mixin inline-link {
+  color: $grey_3;
+  /*border: 0.075em solid $grey_2;
+  border-radius: var(--br_1);
+  padding: 0 0.175em 0.075em 0.175em;*/
+  text-decoration: underline;
+  text-decoration-thickness: 0.075em;
+  text-underline-offset: 0.125em;
+  text-decoration-color: $grey_2;
+
+  html.no-touch &:hover,
+  &:active {
+    color: $grey_2;
+    text-decoration-color: $grey_1;
+  }
+}
+
+@mixin bar--text {
+  flex-direction: column;
+  //justify-content: center;
+  gap: var(--p_xy_1);
+  p {
+    max-width: 33em;
+    margin: 0;
+    white-space: normal;
+  }
+  a {
+    @include inline-link;
+  }
+}
+
+
+@mixin text-small{
+
+}
+@mixin text-medium{
+
+}
+@mixin text-large {
+
+}
+
+
+
+@mixin slide-up {
+  transform: translate3d(0,calc(var(--space_0)*16),0);
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out 0.15s, transform 0.6s ease-out;
+  &.is-in-view {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+@mixin slide-down {
+  transition: transform 0.3s ease-out, opacity 0.15s ease-in-out;
+  opacity: 0;
+  transform: scale(0.75) translate3d(0, calc(var(--space_0)*-8), 0);
+  &.is-in-view {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}

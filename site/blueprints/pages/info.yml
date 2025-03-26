@@ -1,0 +1,84 @@
+title: Information
+
+options:
+  #student and alumni roles can not do anything here
+  access:
+    student: false
+    alumni: false
+  create:
+    student: false
+    alumni: false
+  update:
+    student: false
+    alumni: false
+  changeStatus:
+    student: false
+    alumni: false
+  changeTitle:
+    student: false
+    alumni: false
+  changeSlug:
+    student: false
+    alumni: false
+  delete:
+    student: false
+    alumni: false
+
+tabs:
+  intro:
+    fields:
+      about_headline:
+        label: Headline
+        type: text
+        width: 2/3
+      about_text:
+        label: Text
+        type: writer
+        width: 2/3
+        marks:
+          - bold
+          - link
+          #link:
+          #  extends: fields/link
+          #  options:
+          #    - page
+          #    - anchor
+        nodes: false
+        inline: false
+        help: 'Linebreaks: "shift" + "enter"'
+  people:
+    fields:
+      teaching_staff:
+        label: Teaching Staff
+        type: structure
+        width: 3/3
+        columns:
+          name:
+          status:
+          role:
+          timespan:
+          email:
+          website:
+        fields:
+          name:
+            type: text
+            width: 1/3
+          status:
+            type: select
+            width: 1/3
+            requried: true
+            default: active
+            options:
+              active: Current Staff
+              inactive: Former Staff
+          role:
+            type: tags
+            width: 1/3
+            max: 1
+            options:
+              - "Professor"
+              - "Assistant (küstl. wiss. HK)"
+              - "Assistant (stud. HK)"
+              - "Guest Professor"
+              - "Guest Lecturer"
+          profile_fields: fields/profile_fields

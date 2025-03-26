@@ -1,0 +1,79 @@
+<?php /*
+* VARIABLES: ($file, $width, $srcset, $link, $classname, $alt, $caption)
+*/ ?>
+<?php if ($file): ?>
+  <?php if ($link && $link->isNotEmpty()): ?>
+    <?php $link_object = $link->toObject() ?>
+    <a class="image-link"
+      <?php e($link_object->link_external()->toBool() == true, ' target="_blank" rel="noopener noreferrer"', '') ?> 
+      href="<?= $link_object->link_target() ?>">
+      <span class="image-link-title">
+        <?= $link_object->link_title() ?>
+      </span>
+    </a>
+  <?php endif ?>
+  <?php if ($file->extension() == 'svg'): ?>
+    <figure class="svg-wr<?= ($classname) ? ' '.$classname : '' ?>">
+      <?= svg($file) ?>
+    </figure>
+  <?php else: 
+    $ratio = convert_ratio($file->ratio());
+    //$v_padding = ($width) ? $width/$ratio : 100/$ratio;
+    $v_padding = 100/$ratio;
+
+    $srcset_fallback = $srcset.'_fallback';
+    // TODO include mobile breakpoints here, e.g. 800px = 100vw etc.
+    $sizes = ($width) ? '(min-width: 2000px) ' . $width . 'vw, (min-width: 1600px) ' . $width . 'vw, (min-width: 1200px) ' . $width . 'vw, (min-width: 800px) ' . $width . 'vw, ' . $width . 'vw' :  'auto'; // see config.php for breakpoints and sizes reference level
+
+    if (!$alt) {
+      $alt = $site_title;
+      $title = $site_title;
+    } else {
+      $alt = $alt;
+      $title = $alt;
+    }
+
+    if ($file->extension() == 'gif'): ?>
+      <figure
+        class="<?= ($classname) ? $classname : '' ?>"
+        style="padding-bottom: <?= $v_padding ?>%;"><?php // max-width: ($width) ? $width : 100 ?>
+        <img 
+          class="lazyload"
+          style="aspect-ratio:<?= $ratio ?>;"
+          src="<?= $file->thumb(['width' => 42])->url() ?>"
+          data-src="<?= $file->url() ?>"
+          data-ratio="<?= $ratio ?>"
+          alt="<?= $alt ?>"
+          title="<?= $title ?>">
+        <?php if ($caption && $caption->isNotEmpty()): ?>
+          <figcaption><?= $caption ?></figcaption>
+        <?php endif ?>
+      </figure>
+    <?php else: ?>
+      <figure
+        class="<?= ($classname) ? $classname : '' ?>"
+        style="padding-bottom: <?= $v_padding ?>%;"><?php // max-width: ($width) ? $width : 100 ?>
+        <picture>
+          <source
+            data-srcset="<?= $file->srcset($srcset) ?>"
+            data-sizes="<?= $sizes ?>"
+            type="image/webp">
+          <img 
+            class="lazyload"
+            style="--aspect-ratio: <?= $ratio ?>;"
+            src="<?= $file->thumb(['width' => 42, 'blur' => true, 'quality' => 10, 'format' => 'webp'])->url() ?>" <?php // maybe remove default src if dom size gets too heavy ?>
+            data-srcset="<?= $file->srcset($srcset_fallback) ?>"
+            data-sizes="<?= $sizes ?>"
+            data-ratio="<?= $ratio ?>"
+            alt="<?= $alt ?>"
+            title="<?= $title ?>">
+        </picture>
+        <?php if ($caption && $caption->isNotEmpty()): ?>
+          <figcaption><?= $caption ?></figcaption>
+        <?php endif ?>
+      </figure>
+    <?php endif ?>
+  <?php endif ?>
+<?php else: ?>
+  <code>FILE NOT FOUND</code>
+<?php endif ?>

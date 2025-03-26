@@ -1,0 +1,16 @@
+type: group
+fields:
+  meta_image:
+    label: Meta image
+    translate: false
+    type: files
+    width: 1/4
+    multiple: false
+    layout: cards
+    uploads:
+      template: image
+  meta_description:
+    label: Meta description
+    type: text
+    width: 1/2
+    maxlength: 160

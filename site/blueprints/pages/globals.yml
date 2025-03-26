@@ -1,0 +1,37 @@
+title: Globals
+pages: false
+files: false
+
+options:
+  #student and alumni roles can not do anything here
+  access:
+    student: false
+    alumni: false
+  create: false
+  update:
+    student: false
+    alumni: false
+  changeTitle: false
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+  move: false
+  duplicate: false
+
+tabs:
+  graphics:
+    label: Graphics
+    fields:
+      favicon:
+        type: files
+        width: 1/4
+        translate: false
+        layout: cards
+        image:
+          back: white
+        size: tiny
+        max: 1
+  meta:
+    fields:
+      meta: fields/meta_data

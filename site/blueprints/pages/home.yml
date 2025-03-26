@@ -1,0 +1,47 @@
+title: Home
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+  move: false
+  duplicate: false
+
+columns:
+  left:
+    width: 1/1
+    fields:
+      post_collections:
+        label: Post Collections
+        type: structure
+        columns:
+          label:
+            width: 1/6
+          style:
+            width: 1/6
+          posts:
+            width: 2/3
+        fields:
+          label:
+            type: text
+            width: 1/2
+            max: 50
+          style:
+            type: select
+            width: 1/2
+            default: medium
+            placeholder: "Please select"
+            options:
+              large: "Large (max. content visible)"
+              medium: "Medium (image & title visible)"
+              small: "Small (only image visible)"
+              tiny: "Tiny (title & image visible)"
+          posts:
+            type: pages
+            required: true
+            query: site.index.filterBy('template', 'in', ['post']).listed
+            image: page.preview_image.toFile
+            text: <strong>{{ page.title }}</strong>&ensp;<small style="color:grey;">{{ page.author_id.toUser.username }}&ensp;{{ page.update_time }}</small>
+            empty: No posts selected yet.
+            

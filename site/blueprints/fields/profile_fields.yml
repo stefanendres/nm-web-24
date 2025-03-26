@@ -1,0 +1,34 @@
+type: group
+fields:
+  timespan:
+    type: text
+    width: 1/3
+  free_text:
+    label: Text / Links
+    type: writer
+    width: 2/3
+    inline: true
+    nodes: 
+      - bulletList
+      - orderedList
+    marks:
+      - bold
+      - link
+      - italic
+    links:
+      - page
+      - anchor
+  #email:
+  #  type: email
+  #  width: 1/3
+  #  when:
+  #    status: active
+  #website:
+  #  type: url
+  #  width: 1/3
+  profile_picture:
+    type: files
+    label: Picture
+    width: 1/3
+    multiple: false
+    layout: cards

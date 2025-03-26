@@ -1,0 +1,27 @@
+name: Embed
+icon: archive
+fields:
+  code:
+    label: Embed code
+    type: textarea
+    buttons: false
+    uploads: false
+    files: false
+    counter: false
+    font: monospace
+    size: medium
+  ratio:
+    label: Frame aspect-ratio
+    width: 1/4
+    type: select
+    placeholder: "Please select" 
+    options:
+      1/1: "1:1"
+      4/5: "4:5"
+      5/4: "5:4"
+      3/4: "3:4"
+      4/3: "4:3"
+      9/16: "9:16"
+      16/9: "16:9"
+  #caption:
+    #type: text

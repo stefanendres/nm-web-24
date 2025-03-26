@@ -1,0 +1,37 @@
+.post-overlay{
+  align-items: flex-end;
+  .wrapper{
+    @include wrapper--bars;
+    /*
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    scrollbar-width: none;
+    */
+  }
+  .title,
+  .data{
+    @include bar;
+    width: 100%;
+  }
+  .title{
+    @include bar--title-thumb;
+  }
+  // category & tags
+  .data-0{
+    @include bar--categories-tags;
+  }
+  // authors & participants
+  .data-1 {
+    @include bar--authors-participants-years;
+  }
+  // description
+  .data-2{
+    @include bar--text;
+  }
+  // related content
+  .data-3{
+    @include bar--related;
+  }
+}

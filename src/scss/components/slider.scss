@@ -1,0 +1,102 @@
+// extends swiper/swiper.scss
+
+.swiper {
+  width: 100%;
+  .template-home &,
+  .template-search &,
+  .template-info & {
+    overflow: visible; // need for collections hover effect
+    &:not(.swiper-initialized) {
+      .swiper-wrapper{
+        justify-content: center;
+      }
+    }
+    .swiper-wrapper {
+      flex-direction: row;
+      //align-items: flex-end;
+      align-items: center;
+    }
+    .swiper-slide{
+      box-shadow: $shadow_0;
+    }
+  }
+  .template-post & {
+    border-radius: var(--br_0);
+  }
+}
+
+.swiper-controls{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  column-gap: 0.25rem;
+  padding: 1rem;
+}
+.swiper-pagination-bullet{
+  display: inline-flex;
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.25rem;
+  cursor: pointer;
+  &:after{
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.75rem;
+    background-color: $grey_0;
+    box-shadow: $shadow_0;
+  }
+  &-active:after{
+    background-color: $grey_2;
+  }
+}
+/*
+.swiper-pagination-bullets-dynamic {
+  overflow: hidden;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet:after {
+  transform: scale(.33);
+  background: red;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active:after {
+  transform: scale(1);
+  background: yellow; // not visible
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main:after {
+  transform: scale(1);
+  background: orange;
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev:after {
+  transform: scale(.66)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev:after {
+  transform: scale(.33)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next:after {
+  transform: scale(.66)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next:after {
+  transform: scale(.33)
+}
+*/

@@ -1,0 +1,4 @@
+label: HTML Classname
+type: text
+width: 1/3
+help: Set classname to access this element via Custom CSS

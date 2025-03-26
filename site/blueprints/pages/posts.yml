@@ -1,0 +1,14 @@
+title: Posts
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+  move: false
+  duplicate: false
+
+fields:
+  placeholder:
+    type: headline
+    label: Nothing to do here 🥲

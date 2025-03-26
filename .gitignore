@@ -1,0 +1,109 @@
+# System files
+# ------------
+
+Icon
+.DS_Store
+
+# Temporary files
+# ---------------
+
+/media/*
+!/media/index.html
+
+/public/media
+/public/media/
+/public/media/*
+
+storage/
+
+# Lock files
+# ---------------
+
+.lock
+
+# Editors
+# (sensitive workspace files)
+# ---------------------------
+*.sublime-workspace
+/.vscode
+/.idea
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Cache Files
+# ---------------
+
+/site/cache/*
+!/site/cache/index.html
+
+# Accounts
+# ---------------
+
+/site/accounts/*
+!/site/accounts/index.html
+
+# Sessions
+# ---------------
+
+/site/sessions/*
+!/site/sessions/index.html
+
+# License
+# ---------------
+
+/site/config/.license
+
+
+
+# Custom ignores go here
+
+# NPM
+# ---------------
+/node_modules
+/node_modules/*
+
+# dist, build, assets
+# ---------------
+/public/dist
+/public/dist/
+/public/dist/*
+public/dist
+public/dist/
+public/dist/*
+dist/
+dist/*
+
+# Vite Kirby
+# ---------------
+.dev
+/vendor
+/vendor/*
+composer.lock
+package-lock.json
+kirby/
+kirby/*
+content/
+content/*
+contentold/
+contentold/*
+site/plugins/kirby-vite
+site/plugins/kirby-vite/*
+site/config/vite.config.php 
+
+# Algolia
+# -------------
+site/plugins/functions/.env
+src/.env
+
+
+# LogFiles
+# -------------
+
+public/*.log
+public/jobs/*.log
+*.log
+logs/*
+
+##

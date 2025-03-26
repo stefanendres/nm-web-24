@@ -1,0 +1,261 @@
+.template-posts {
+  main {
+    padding: 1.5rem 0 7.5rem 0;
+  }
+}
+
+.ais-SearchBox{
+  padding-top: 3.25rem;
+}
+
+
+
+.ais-InfiniteHits-loadMore{ // pseodu hide so observer can still observe
+  color: $grey_0;
+  cursor: default;
+}
+
+.ais-InfiniteHits {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &--empty{
+    @include bar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $black;
+    font-weight: 900;
+  }
+
+  &-list {
+    @include wrapper--bars;
+    justify-content: center;
+  }
+
+  &-item {
+    width: 100%;
+    padding: 0 var(--p_xy_1);
+  }
+  
+  // single result
+  .search-hit-item{
+    margin-left: 0;
+    width: 100%;
+    box-shadow: $shadow_0;
+  }
+
+  .wrapper {
+    figure {
+      flex-shrink: 0;
+    }
+    &>div {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      h3 {
+        display: flex;
+        white-space: nowrap !important;
+        padding-right: 0 !important;
+        div{
+          margin-right: 0.25em;
+          font-weight: 300;
+        }
+      }
+      p {
+        display: inline-flex;
+        max-height: calc(1.15em * 2);
+        overflow: hidden;
+        padding-left: var(--p_xy_1);
+        margin: 0;
+        color: $grey_3;
+        .ais-Highlight {
+          display: inline-flex;
+          flex-wrap: wrap;
+        }
+        .ais-Highlight-separator{
+          margin-right: 0.25em;
+        }
+      }
+    }
+  }
+}
+
+mark {
+  padding: 0 1px;
+  border-radius: var(--br_0);
+  letter-spacing: 0.0125em;
+  
+  background-color: $grey_1;
+  color: $black;
+}
+
+// search from
+.ais-SearchBox-form{
+  // find overlay-styles in components/overlay 
+  top: 1rem;
+  bottom: unset;
+
+  html.no-touch & {
+    top: unset;
+    bottom: 5.25em;
+  }
+  @include bar;
+  align-items: center;
+  padding: 0;
+  overflow: unset;
+  input{
+    border-radius: var(--br_1);//iOS
+    width: 100%;
+    min-height: calc(var(--p_xy_1) + var(--button_w) + var(--p_xy_1));
+    padding: 0 calc(var(--p_xy_1) * 1.625 + 0.875rem + var(--p_xy_1) * 1.625);
+    position: relative;
+
+    text-align: center;
+    letter-spacing: 0.025em;
+    font-weight: 900;
+
+    background-color: $grey_3;
+    color: $grey_0;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    transition: background-color 0.15s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover,
+    &:active{
+      background-color: $black;
+      color: $white;
+      &~.ais-SearchBox-submit{
+        svg {
+          path {
+            fill: $grey_0;
+            stroke: $grey_0;
+          }
+        }
+      }
+    }
+    &:focus-visible{
+      box-shadow: inset $shadow_1;
+    }
+
+  }
+}
+.search-box {
+  button {
+    background-color: transparent;
+  }
+}
+.ais-SearchBox-submit {
+  position: absolute;
+  left: 0;
+  padding: 0 calc(var(--p_xy_1) * 1.5);
+  margin-top: calc(var(--p_xy_1) * 0.125);
+  z-index: 1;
+  height: 100%;
+  svg {
+    width: 0.875rem;
+    height: 0.875rem;
+    path{
+      transition: all 0.15s ease-in-out;
+      fill: $grey_1;
+      stroke: $grey_1;
+      stroke-width: 1px;
+    }
+  }
+  html.no-touch &:hover,
+  &:active{
+    svg {
+      path {
+        fill: $white;
+        stroke: $white;
+      }
+    }
+  }
+}
+
+.ais-SearchBox-reset{
+  position: absolute;
+  right: calc(var(--p_xy_1) * 0.625);
+  z-index: 1;
+  path {
+    fill: $grey_2;
+    stroke: $grey_2;
+    stroke-width: 0.625px;
+  }
+  html.no-touch &:hover,
+  &:active {
+    path {
+      fill: $grey_0;
+      stroke: $grey_0;
+    }
+  }
+}
+
+.search-filters { // overlay styles in components/overlay
+  top: unset;
+  html.no-touch & {
+    top: 1rem;
+    bottom: unset;
+  }
+  flex-direction: column;
+
+  .ais-RefinementList {
+    @include bar;
+    overflow-x: scroll;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    scrollbar-width: none;
+    &--noRefinement{
+      display: none;
+    }
+    &-list {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 0.5rem;
+    }
+    &-item {
+      label {
+        cursor: pointer;
+        white-space: nowrap;
+      }
+    
+      input {
+        display: none;
+      }
+    
+      .ais-RefinementList-count {
+        display: none
+      }
+    
+      order: 1;
+      @include button('l_0');
+    
+      &--selected {
+        order: 0;
+        @include button('l_3');
+      }
+    }
+  }
+}
+
+@media all and (min-width: $break_xs){
+  .ais-SearchBox-reset {
+    top: calc(var(--p_xy_1) * 0.5);
+    svg {
+      width: 0.5rem;
+      height: 0.5rem;
+    }
+  }
+  .ais-SearchBox-submit {
+    margin-top: 0;
+  }
+}

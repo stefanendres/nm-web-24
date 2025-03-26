@@ -1,0 +1,141 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  //padding: 1rem 0;
+  width: 100%;
+  transition: filter 0.3s ease-in;
+
+  filter: blur(0);
+  &.is-blurred{
+    filter: blur(12px);
+  }
+
+  &-simple{
+    margin: 0 auto;
+  }
+  &-simple,
+  &-minimal{
+    padding: 0 1rem;
+  }
+
+  figure,
+  .embed {
+    border-radius: var(--br_0);
+  }
+  .embed{
+    overflow: clip;
+    background-color: $grey_3;
+  }
+  p,h2,h3,h4{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0 var(--br_0);
+  }
+  h2{
+    @include headline('h_2');
+  }
+  h3 {
+    @include headline('h_3');
+  }
+  h4 {
+    @include headline('h_4');
+  }
+  p a {
+    @include inline-link;
+  }
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 1rem;
+  column-gap: 1rem;
+  
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative; // for absolute positioned image-links
+  min-height: 1rem; // = spacer-module
+  width: calc(100vw - 2 * 1rem); // 2*column-gap
+  &:not(.width-100){
+    width: calc(100vw - 4 * 1rem); // 2*column-gap
+  }
+  &.is-empty{
+    display: none;
+  }
+}
+
+.v-align{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  &-center{
+    align-items: center;
+  }
+  &-bottom {
+    align-items: flex-end;
+  }
+}
+
+@media all and (min-width: #{$break_xs}) {
+  .layout {
+    &-simple {
+      width: 80%;
+    }
+  }
+  .column {
+    flex-shrink: unset;
+    &.is-empty {
+      display: flex;
+    }
+    &.width-100 {
+      width: 100%;
+    }
+    &.width-66 {
+      width: 66.666%;
+    }
+    &.width-50 {
+      width: 50%;
+    }
+    &.width-33 {
+      width: 33.333%;
+    }
+    &.width-25 {
+      width: 25%;
+    } 
+  }
+}
+
+@media all and (min-width: #{$break_s}) {
+  .layout {
+    &-simple {
+      width: 50%;
+    }
+  }
+}
+
+@media all and (min-width: #{$break_m}) {
+  .template-post main {
+    align-items: center;
+  }
+  .layout {
+    &-simple {
+      width: 40%;
+    }
+    &-minimal,
+    &-advanced {
+      width: 80%;
+    }
+  }
+}

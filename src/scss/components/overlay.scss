@@ -1,0 +1,57 @@
+.overlay,
+.ais-SearchBox-form,
+.search-filters {
+    position: fixed;
+    top: 5.5rem;
+    right: 1rem;
+    bottom: 5.25rem;
+    left: 1rem;
+    z-index: 5;
+    display: flex;
+    transition: transform 0.45s ease-in-out;
+    transform: translate3d(0, 100vh, 0);
+
+    &.is-active {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.ais-SearchBox {
+    margin: 0 1rem;
+}
+
+@media all and (min-width: #{$break_xs}) {
+    .overlay,
+    .ais-SearchBox-form,
+    .search-filters {
+        right: 10%;
+        left: 10%;
+    }
+    .ais-SearchBox {
+        margin: 0 10%;
+    }
+}
+
+@media all and (min-width: #{$break_s}) {
+    .overlay,
+    .ais-SearchBox-form,
+    .search-filters {
+        right: 20%;
+        left: 20%;
+    }
+    .ais-SearchBox {
+        margin: 0 20%;
+    }
+}
+
+@media all and (min-width: #{$break_m}) {
+    .overlay,
+    .ais-SearchBox-form,
+    .search-filters {
+        right: 30%;
+        left: 30%;
+    }
+    .ais-SearchBox {
+        margin: 0 30%;
+    }
+}

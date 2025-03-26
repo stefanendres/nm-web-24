@@ -1,0 +1,21 @@
+type: object
+label: Link
+width: 1/2
+fields:
+  link_target:
+    label: Target
+    type: link
+    width: 1/2
+    options:
+      - url
+      - page
+  link_title:
+    label: Title
+    type: text
+    width: 1/2
+  link_external:
+    label: Open new Browser-Tab
+    type: toggle
+    text:
+      - 'No'
+      - 'Yes'

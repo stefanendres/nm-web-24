@@ -1,0 +1,95 @@
+section.intro,
+section.legal {
+  @include wrapper--bars;
+  margin: 0 1rem;
+  padding: var(--p_xy_1) var(--p_xy_1) 0 var(--p_xy_1);
+  width: auto;
+  h2, h3, h4,
+  p {
+    @include bar;
+    width: 100%;
+    margin: 0;
+  }
+
+  h2 {
+    @include bar--title;
+    justify-content: center;
+  }
+
+  p {
+    @include bar--text;
+    display: inline;
+  }
+}
+
+.profile-thumb {
+  width: 66.666%;
+  margin-left: 1rem;
+  overflow: clip;
+  border-radius: var(--br_3);
+  background-color: $white;
+  .wrapper{
+    figure{
+      flex-shrink: 0;
+      border-radius: var(--br_1);
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      overflow: clip;
+      h3 {
+        display: flex;
+        margin: 0;
+      }
+      a {
+        @include inline-link;
+        white-space: break-spaces;
+        &:first-of-type{
+          margin-top: var(--p_xy_1);
+        }
+      }
+    }
+  }
+
+  figure {
+    padding-bottom: 100% !important;
+  }
+
+  &:hover,
+  &:active {
+    figure {
+      filter: none;
+    }
+  }
+}
+
+@media all and (min-width: #{$break_xs}) {
+  section.intro,
+  section.legal{
+    margin: 0 10%;
+  }
+  .profile-thumb {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: #{$break_s}) {
+ section.intro,
+ section.legal{
+    margin: 0 20%;
+  }
+  .profile-thumb {
+    width: 33.333%;
+  }
+}
+
+@media all and (min-width: #{$break_m}) {
+ section.intro,
+ section.legal{
+    margin: 0 30%;
+  }
+  .profile-thumb {
+    width: 20%;
+  }
+}

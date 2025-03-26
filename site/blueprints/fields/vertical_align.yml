@@ -1,0 +1,9 @@
+label: Vertical Alignment
+type: select
+width: 1/3
+default: top
+placeholder: Top
+options:
+  #top: Top
+  center: Center
+  bottom: Bottom

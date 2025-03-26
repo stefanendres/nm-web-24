@@ -1,0 +1,23 @@
+@import 'scss/normalize';
+@import 'scss/variables';
+@import 'scss/mixins';
+//@import 'scss/animations';
+@import 'scss/main';
+@import 'scss/header';
+@import 'scss/components/overlay';
+@import 'scss/components/collections';
+@import 'scss/components/swiper/swiper';
+@import 'scss/components/slider';
+@import 'scss/components/search';
+
+@import 'scss/pages/post/thumbs';
+@import 'scss/pages/post/layouts';
+@import 'scss/pages/post/overlay';
+
+//@import 'scss/pages/home';
+@import 'scss/pages/default';
+
+@import 'scss/footer';
+
+//@import 'scss/legal';
+//@import 'scss/cookie';

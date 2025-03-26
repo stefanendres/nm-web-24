@@ -1,0 +1,41 @@
+.template-home,
+.template-info {
+  main {
+    gap: var(--p_xy_1);
+  }
+
+  .collection {
+    position: relative;
+    max-width: 100vw;
+    padding: 0 var(--p_xy_1);
+    &.static {
+      header.section{
+        justify-content: center;
+      }
+    }
+  }
+
+  header.section {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    h2 {
+      @include label;
+      margin: 0 .5rem;
+      transform: translate3d(0, 33.333%, 0);
+      max-width: 80%;
+    }
+  }
+}
+
+@media all and (min-width: #{$break_m}) {
+  .template-home,
+  .template-info {
+    header.section {
+      h2 {
+        max-width: 40%;
+      }
+    }
+  }
+}
