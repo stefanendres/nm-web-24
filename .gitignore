@@ -86,8 +86,6 @@ kirby/
 kirby/*
 content/
 content/*
-contentold/
-contentold/*
 site/plugins/kirby-vite
 site/plugins/kirby-vite/*
 site/config/vite.config.php 
